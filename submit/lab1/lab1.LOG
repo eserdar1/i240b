@@ -1,0 +1,827 @@
+fns-compare
+
+ode 100644 labs/lab1/exercises/5-auto-dependencies/fns-compare.cc
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/fns-compare.hh
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/lg.cc
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/linear.cc
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/nlg.cc
+ create mode 100644 labs/lab1/exercises/5-auto-dependencies/quadratic.cc
+ create mode 100644 labs/lab1/lab1.html
+ create mode 100644 labs/lab1/lab1.pdf
+ create mode 100644 labs/lab1/lab1.umt
+ create mode 100644 labs/lab1/lab1/hl-fine_blue.css
+ create mode 100644 labs/lab1/lab1/hl-fine_blue.sty
+eserdar1@g7-21:~/cs240/labs$ ls
+index.html  index.umt  lab0  lab1  submission
+eserdar1@g7-21:~/cs240/labs$ cd ~/i204[K[K40b/submit/lab1
+eserdar1@g7-21:~/i240b/submit/lab1$ cp =[K-r ~/cs240?[K/labs/lab1/exercises/*
+eserdar1@g7-21:~/i240b/submit/lab1$ cp =r [K[K[Kr[K=r[K[K-r ~/cs240/labs/lab1/.gitignore/*
+cp: missing destination file operand after '/home/eserdar1/cs240/labs/lab1/.gitignore/*'
+Try 'cp --help' for more information.
+eserdar1@g7-21:~/i240b/submit/lab1$ cp -r ~/cs240/labs/lab1/.gitignore/*[K[K *
+eserdar1@g7-21:~/i240b/submit/lab1$ cp -r ~/cs240/labs/lab1/.gitignore */*[K[K *
+eserdar1@g7-21:~/i240b/submit/lab1$ cp -r ~/cs240/labs/lab1/.gitignore */* */*[1Pexercises/*[13Pd ~/i240b/submit/lab1p -r ~/cs240/labs/lab1/exercises/*[K[K *
+cp: cannot overwrite non-directory 'lab1.LOG' with directory '/home/eserdar1/cs240/labs/lab1/exercises'
+eserdar1@g7-21:~/i240b/submit/lab1$ cp -r ~/cs240/labs/lab1/exercises *[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcd ~/i240b/submit/lab1/o[KO[K0-hello
+bash: cd: /home/eserdar1/i240b/submit/lab1/0-hello: No such file or directory
+eserdar1@g7-21:~/i240b/submit/lab1$ cd ~/i240b/submit/lab1/0-hello[1P0-hello/0-hello[C[1P-helloO-hello
+bash: cd: /home/eserdar1/i240b/submit/lab1/O-hello: No such file or directory
+eserdar1@g7-21:~/i240b/submit/lab1$ cd ~/i240b/submit/lab1/O-hello[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+lab1.LOG
+eserdar1@g7-21:~/i240b/submit/lab1$ lscd ~/i240b/submit/lab1/O-hello[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcp -r ~?[K[K[K[K[K[K[K[Kcp -r ~/cs240/labs/lab1/exercises/* .[K.
+eserdar1@g7-21:~/i240b/submit/lab1$ ls
+0-hello       2-separate-compilation  4-dependencies	   lab1.LOG
+1-monolithic  3-makefile	      5-auto-dependencies
+eserdar1@g7-21:~/i240b/submit/lab1$  cp -r ~/cs240/labs/lab1/.gitignore/* .[K[K[K[K .
+eserdar1@g7-21:~/i240b/submit/lab1$ cs[K[K cp -r ~/cs240/labs/lab1/.gitignore .ls[Kcp -r ~/cs240/labs/lab1/exercises/* .ls[Kcd ~/i240b/submit/lab1/O-hello
+bash: cd: /home/eserdar1/i240b/submit/lab1/O-hello: No such file or directory
+eserdar1@g7-21:~/i240b/submit/lab1$ ls
+0-hello       2-separate-compilation  4-dependencies	   lab1.LOG
+1-monolithic  3-makefile	      5-auto-dependencies
+eserdar1@g7-21:~/i240b/submit/lab1$ lscd ~/i240b/submit/lab1/O-hello[C[1P-hello0-hello
+eserdar1@g7-21:~/i240b/submit/lab1/0-hello$ ls-[K -1
+hello.cc
+eserdar1@g7-21:~/i240b/submit/lab1/0-hello$ make
+make: *** No targets specified and no makefile found.  Stop.
+eserdar1@g7-21:~/i240b/submit/lab1/0-hello$ make hge[K[Kello
+g++     hello.cc   -o hello
+eserdar1@g7-21:~/i240b/submit/lab1/0-hello$ ls -1 
+hello
+hello.cc
+eserdar1@g7-21:~/i240b/submit/lab1/0-hello$ file hello\[K
+hello: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, BuildID[sha1]=99af5e976454700966eadf73920a1f533966fdc8, not stripped
+eserdar1@g7-21:~/i240b/submit/lab1/0-hello$ ./hello 
+hello world
+eserdar1@g7-21:~/i240b/submit/lab1/0-hello$ make -p | less
+make: *** No targets specified and no makefile found.  Stop.
+[?1049h[22;0;0t[?1h=# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Jan 30 17:41:32 2020
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = lightdm-xsession
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+XDG_SESSION_TYPE = x11
+:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KBB[K# default
+:[K[K [KESCESC[KOO[KAA[K[HM# GNU Make 4.2.1
+[24;1H[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K [KESCESC[KOO[KAA[K[K:[K[K[?1l>[?1049l[23;0;0t
+[1]+  Stopped                 make -p | less
+eserdar1@g7-21:~/i240b/submit/lab1/0-hello$ make -p | less
+[?1049h[22;0;0t[?1h=make: *** No targets specified and no makefile found.  Stop.
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Jan 30 17:42:19 2020
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = lightdm-xsession
+# default
+.SHELLFLAGS := -c
+# environment
+XDG_SESSION_CLASS = user
+# environment
+XDG_SESSION_TYPE = x11
+:[K[K# default
+:[K[K-[Klog file: [Kdd[Kff[Kss[Kff[Kss[K[K[K[K[K[K:[K[K:[K[K:[K[K:[K[K:[K[K:[K[K[?1l>[?1049l[23;0;0t
+[2]+  Stopped                 make -p | less
+eserdar1@g7-21:~/i240b/submit/lab1/0-hello$ -p | egep [K[K[Kre[[Kp 'cc|CC[KXX'
+bash: -p: command not found
+eserdar1@g7-21:~/i240b/submit/lab1/0-hello$ -p | egrep 'cc|CXX'[1@m[1@a[1@k[1@e[1@ [1P[1@ 
+make: *** No targets specified and no makefile found.  Stop.
+COMPILE.cpp = $(COMPILE.cc)
+CC = cc
+LINK.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(LDFLAGS) $(TARGET_ARCH)
+KRB5CCNAME = FILE:/tmp/krb5cc_14788_7bZb28
+YACC = yacc
+LINK.C = $(LINK.cc)
+LINK.cpp = $(LINK.cc)
+COMPILE.cc = $(CXX) $(CXXFLAGS) $(CPPFLAGS) $(TARGET_ARCH) -c
+CXX = g++
+COMPILE.C = $(COMPILE.cc)
+SUFFIXES := .out .a .ln .o .c .cc .C .cpp .p .f .F .m .r .y .l .ym .yl .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+OBJC = cc
+%.cc:
+%: %.cc
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+%.o: %.cc
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+.cc:
+	$(LINK.cc) $^ $(LOADLIBES) $(LDLIBS) -o $@
+.cc.o:
+	$(COMPILE.cc) $(OUTPUT_OPTION) $<
+.SUFFIXES: .out .a .ln .o .c .cc .C .cpp .p .f .F .m .r .y .l .ym .yl .s .S .mod .sym .def .h .info .dvi .tex .texinfo .texi .txinfo .w .ch .web .sh .elc .el
+eserdar1@g7-21:~/i240b/submit/lab1/0-hello$ make -p | egrep 'cc|CXX'[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pmake -p | less-p | egrep 'cc|CXX'[5Pmake -p | less\[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+hello  hello.cc
+eserdar1@g7-21:~/i240b/submit/lab1/0-hello$ cd //[K[K..
+eserdar1@g7-21:~/i240b/submit/lab1$ ls
+0-hello       2-separate-compilation  4-dependencies	   lab1.LOG
+1-monolithic  3-makefile	      5-auto-dependencies
+eserdar1@g7-21:~/i240b/submit/lab1$ cd 1=[K-monolithic
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ ls
+fns-compare.cc
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ make fns-compare
+g++     fns-compare.cc   -o fns-compare
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ ./fns-compare
+1 100000
+10 1e+06
+100 1e+07
+1000 1e+08
+10000 1e+09
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ gedit [K[K[K[K[K[Klas
+bash: las: command not found
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ g[Kls
+fns-compare  fns-compare.cc
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ gedit fns-compare.cc
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ g++ -g -Wall -std +[K[K+[K=c++17 fns-com pare.cc -o fns [K-compare
+[01m[Kfns-compare.cc:11:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble quadratic(double)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[Kquadratic[m[K(double n)
+ [01;35m[K^~~~~~~~~[m[K
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ g[Kg++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pedit fns-compare.cc
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kgedit fns-compare.cc
+
+(gedit:559384): Gtk-[1;33mWARNING[0m **: [34m17:48:14.204[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ gedit fns-compare.cc++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pedit fns-compare.cc
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kas[1Psgedit fns-compare.cc++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pedit fns-compare.cc
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kgedit fns-compare.cc++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[11Pedit fns-compare.cc
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kas./fns-comparemake fns-compare[3P./fns-comparemake fns-compare[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klscd 1-monolithicls[Kcd ..[3Plscd 1-monolithicls[Kcd ..[3Plsmake -p | egrep 'cc|CXX'[5P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[5Pmake -p | less[6P./hello file hello[2P./hello file hello[2P./hello make -p | less[K[K[K[K[K[K[K[K[K[K[K[K[K[K./compare[K[K[K[K[K[K[Kfns-compare
+1 100000
+10 1e+06
+100 1e+07
+1000 1e+08
+10000 1e+09
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ ./fns-comparegedit fns-compare.cc[7P./fns-comparegedit fns-compare.cc[7P./fns-comparegedit fns-compare.cc++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ g++ -g -Wall -std=c++17 fns-compare.cc -o fns-compare[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[18P./fns-compare
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+1,100000,1000
+10,1e+06,100000
+100,1e+07,1e+07
+1000,1e+08,1e+09
+10000,1e+09,1e+11
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ .ls[K[K[Kcd. [K[K ..
+eserdar1@g7-21:~/i240b/submit/lab1$ ls
+0-hello       2-separate-compilation  4-dependencies	   lab1.LOG
+1-monolithic  3-makefile	      5-auto-dependencies
+eserdar1@g7-21:~/i240b/submit/lab1$ cd 2-sepe[Kare[Kate-compl[Kilation
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ls
+fns-compare.cc	fns-compare.hh	linear.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c fns-compare.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c linear.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ fns-compare.o linear.o -o fns-compare
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ./[K[Kg++ fns-compare.o linear.o -o fns-compare[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-g -Wall -std=c++1[5P7 -c linear.cc[C[C[C[C[C[Cfns-compare.cc[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd 2-separate-compilation[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd .../fns-compare
+         n    linear
+         1     10000
+        10    100000
+       100     1e+06
+      1000     1e+07
+     10000     1e+08
+    100000     1e+09
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit fns [K-compare/cc[K[K[K.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ge[K[Kls
+fns-compare  fns-compare.cc  fns-compare.hh  fns-compare.o  linear.cc  linear.o
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit lie[Knear.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit linear.ccls[Kgedit fns-compare.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ sd[K[Kgedit [K[K[K[K[K[Kgedit fns-compare.cc[5Plinear.ccfns-compare.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ls
+fns-compare  fns-compare.cc  fns-compare.hh  fns-compare.o  linear.cc  linear.o
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ cd ..
+eserdar1@g7-21:~/i240b/submit/lab1$ ls
+0-hello       2-separate-compilation  4-dependencies	   lab1.LOG
+1-monolithic  3-makefile	      5-auto-dependencies
+eserdar1@g7-21:~/i240b/submit/lab1$ lscd ..[K[K2=-[K[K-sepe[Kare[Kate-compilation
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ls
+fns-compare  fns-compare.cc  fns-compare.hh  fns-compare.o  linear.cc  linear.o
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit fns-compare/[K.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ls
+fns-compare  fns-compare.cc  fns-compare.hh  fns-compare.o  linear.cc  linear.o
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit fns [K.compare
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit fns-compare/cc
+
+** (gedit:561894): [1;33mWARNING[0m **: [34m18:04:54.888[0m: Error when getting information for file “/home/eserdar1/i240b/submit/lab1/2-separate-compilation/fns-compare/cc”: Not a directory
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit fns-compare/cc[K[K[K.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ls[K[Kgedit fns-compare.cc& [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K&
+[3] 562005
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ls[K[Kcd/ [K[K .. 
+eserdar1@g7-21:~/i240b/submit/lab1$ ls
+0-hello       2-separate-compilation  4-dependencies	   lab1.LOG
+1-monolithic  3-makefile	      5-auto-dependencies
+eserdar1@g7-21:~/i240b/submit/lab1$ cd 1-monolithic
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ ls
+fns-compare  fns-compare.cc
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ gedit fns-compare/[K.cc
+eserdar1@g7-21:~/i240b/submit/lab1/1-monolithic$ cd ..
+eserdar1@g7-21:~/i240b/submit/lab1$ ls
+0-hello       2-separate-compilation  4-dependencies	   lab1.LOG
+1-monolithic  3-makefile	      5-auto-dependencies
+eserdar1@g7-21:~/i240b/submit/lab1$ cd 2-separate-compilation
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ls
+fns-compare  fns-compare.cc  fns-compare.hh  fns-compare.o  linear.cc  linear.o
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit fns-cop[Kmpare.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit linear.cc[K[K[K[K[K[K[K[K[K[Keserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit [Keserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit [Keserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit [Keserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit [Keserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit [Keserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit [Keserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit [K[K[K[K[K[Kls
+fns-compare  fns-compare.cc  fns-compare.hh  fns-compare.o  linear.cc  linear.o
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit quadratic/c[K[K.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ 
+(gedit:562005): Gtk-[1;33mWARNING[0m **: [34m18:08:12.789[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+s[Ksda[K[K[K
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit quadratic.ccls[Kgedit fns-compare.cc&[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Klinear.cc&
+[4] 562419
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit quadratic/[K.cc&
+[5] 562449
+[4]   Done                    gedit linear.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c fns-compare.cc
+[3]   Done                    gedit fns-compare.cc
+[5]   Done                    gedit quadratic.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c linear.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c linear.cc[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[Kqua dratic.cc
+[01m[Kquadratic.cc:14:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble quadratic(double)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[Kquadratic[m[K(double n)
+ [01;35m[K^~~~~~~~~[m[K
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c quadratic.cc
+[01m[Kquadratic.cc:14:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble quadratic(double)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[Kquadratic[m[K(double n)
+ [01;35m[K^~~~~~~~~[m[K
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ gns-compare.o loe[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kquadratic.o l[Klo[Kinear/o[K[K.i[Ko -o qu adratic
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x20): undefined reference to `main'
+/usr/bin/ld: quadratic.o: in function `__static_initialization_and_destruction_0(int, int)':
+/home/eserdar1/i240b/submit/lab1/2-separate-compilation/quadratic.cc:11: undefined reference to `register_fn(FnInfo)'
+/usr/bin/ld: linear.o: in function `__static_initialization_and_destruction_0(int, int)':
+/home/eserdar1/i240b/submit/lab1/2-separate-compilation/linear.cc:11: undefined reference to `register_fn(FnInfo)'
+collect2: error: ld returned 1 exit status
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ls
+fns-compare	fns-compare.hh	linear.cc  quadratic.cc
+fns-compare.cc	fns-compare.o	linear.o   quadratic.o
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ./fns-compare
+         n    linear
+         1     10000
+        10    100000
+       100     1e+06
+      1000     1e+07
+     10000     1e+08
+    100000     1e+09
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ./fns-comparels[K[K[Kg++ quadratic.o linear.o -o quadratic[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-g -Wall -std=c++17 -c quadratic.cc[K[Aeserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c quadratic.cc[K[Aeserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c quadratic.cc[Keserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c quadratic.cc[Keserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c quadratic.cc
+[01m[Kquadratic.cc:14:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble quadratic(double)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[Kquadratic[m[K(double n)
+ [01;35m[K^~~~~~~~~[m[K
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit quadratic.cc
+
+(gedit:563167): Gtk-[1;33mWARNING[0m **: [34m18:15:27.700[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit quadratic.cc[21@++ -g -Wall -std=c++17 -c[C[C[C[C[C[C[C[C[C[C[C[C[C
+[01m[Kquadratic.cc:4:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kquadratic[m[K’ was not declared in this scope
+   register_fn(FnInfo("quadratic", [01;31m[Kquadratic[m[K));
+                                   [01;31m[K^~~~~~~~~[m[K
+[01m[Kquadratic.cc:7:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble quadratic(double)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[Kquadratic[m[K(double n)
+ [01;35m[K^~~~~~~~~[m[K
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c quadratic.cc
+[01m[Kquadratic.cc:4:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kquadratic[m[K’ was not declared in this scope
+   register_fn(FnInfo("quadratic", [01;31m[Kquadratic[m[K));
+                                   [01;31m[K^~~~~~~~~[m[K
+[01m[Kquadratic.cc:7:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdouble quadratic(double)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[Kquadratic[m[K(double n)
+ [01;35m[K^~~~~~~~~[m[K
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c quadratic.cc[21Pedit[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+(gedit:563361): Gtk-[1;33mWARNING[0m **: [34m18:17:23.375[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ gedit quadratic.cc[21@++ -g -Wall -std=c++17 -c[C[C[C[C[C[C[C[C[C[C[C[C[C
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c quadratic.cc[21Pedit[C[C[C[C[C[C[C[C[C[C[C[C[C[21@++ -g -Wall -std=c++17 -c[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pedit[C[C[C[C[C[C[C[C[C[C[C[C[C[21@++ -g -Wall -std=c++17 -c[C[C[C[C[C[C[C[C[C[C[C[C[C[26P./fns-compare
+         n    linear
+         1     10000
+        10    100000
+       100     1e+06
+      1000     1e+07
+     10000     1e+08
+    100000     1e+09
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ./fns-compareg++ -g -Wall -std=c++17 -c quadratic.cc[21Pedit[C[C[C[C[C[C[C[C[C[C[C[C[C[21@++ -g -Wall -std=c++17 -c[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pedit[C[C[C[C[C[C[C[C[C[C[C[C[C[21@++ -g -Wall -std=c++17 -c[C[C[C[C[C[C[C[C[C[C[C[C[C[26P./fns-compare[Kg++ quadratic.o linear.o -o quadratic-g -Wall -std=c++17 -c quadratic.cc[3Plinear.ccfns-compare.cc[22Pedit quadratic.cc&[3Plinear.cc&quadratic.ccls[Kgedit fns-compare.ccls[Kgedit quadratic.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c fns-compare.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ -g -Wall -std=c++17 -c linear.cc[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kg++ -g -Wall -std=c++17 -c fns-compare.cc[1P.cc[1P.cc[1P.cc[1P.cc[1P.cc[1P.cc[1P.cc[1P.cc[1P.cc[1P.cc[1P.ccq.ccu.cca.ccd.ccr.cca.cct.cci.ccc.cc
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ g++ fns-compare.o linear.o -o fns-compare[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1@ [1P[1@s[1P[C[1@ [1@f[1@n[1@s[1@-[1@c[1@o[1@m[1@p[1@a[1@r[1@e[1@.[1@o[C[1@ [1@l[1@i[1@n[1@e[1@a[1@r[1@.[1@o[C[1@ [1@q[1@u[1@a[1@d[1@r[1@a[1@t[1@i[1@c[1@.[1@o
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ./fns-compare\
+> ./fns-compare\[K[K[K[K[K[K[K
+         n    linear quadratic
+         1     10000      1000
+        10    100000    100000
+       100     1e+06     1e+07
+      1000     1e+07     1e+09
+     10000     1e+08     1e+11
+    100000     1e+09     1e+13
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ make quadratic.cc
+make: Nothing to be done for 'quadratic.cc'.
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ make quadratic.cc[K[K[K[Kc
+cc   quadratic.o   -o quadratic
+/usr/bin/ld: /usr/lib/gcc/x86_64-linux-gnu/8/../../../x86_64-linux-gnu/Scrt1.o: in function `_start':
+(.text+0x20): undefined reference to `main'
+/usr/bin/ld: quadratic.o: in function `__static_initialization_and_destruction_0(int, int)':
+/home/eserdar1/i240b/submit/lab1/2-separate-compilation/quadratic.cc:14: undefined reference to `register_fn(FnInfo)'
+collect2: error: ld returned 1 exit status
+make: *** [<builtin>: quadratic] Error 1
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ ls
+fns-compare  fns-compare.cc  fns-compare.hh  fns-compare.o  linear.cc  linear.o  quadratic.cc  quadratic.o
+eserdar1@g7-21:~/i240b/submit/lab1/2-separate-compilation$ cd /.[K[K..
+eserdar1@g7-21:~/i240b/submit/lab1$ ls
+0-hello  1-monolithic  2-separate-compilation  3-makefile  4-dependencies  5-auto-dependencies	lab1.LOG
+eserdar1@g7-21:~/i240b/submit/lab1$ cd 3-mae[Kkefile
+eserdar1@g7-21:~/i240b/submit/lab1/3-makefile$ ls\[K
+constant.cc  exponential.cc  fns-compare.cc  lg.cc	Makefile  quadratic.cc
+cubic.cc     fact.cc	     fns-compare.hh  linear.cc	nlg.cc
+eserdar1@g7-21:~/i240b/submit/lab1/3-makefile$ make fns [K-compare
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+g++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+g++ fns-compare.o constant.o lg.o linear.o nlg.o quadratic.o cubic.o exponential.o fact.o -o fns-compare
+eserdar1@g7-21:~/i240b/submit/lab1/3-makefile$ ./fns-compare/[K.cc
+bash: ./fns-compare.cc: Permission denied
+eserdar1@g7-21:~/i240b/submit/lab1/3-makefile$ ./fns-compare.ccmake fns-comparels[Kcd 3-makefilels[Kmake fns-comparels[Kcd 3-makefilels[Kcd ..[3Plsmake quadratic.cc[3P./fns-compare\g++ fns-compare.o linear.o quadratic.o -o fns-compare[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./fns-compare\[K[K
+    n constant     log2   linear     n lg    quadr    cubic     expn     fact
+    1    1e+07        0    1e+05        0    1e+03    1e+02       20        1
+   10    1e+07  3.3e+06    1e+06  3.3e+05    1e+05    1e+05    1e+04  3.6e+06
+  100    1e+07  6.6e+06    1e+07  6.6e+06    1e+07    1e+08  1.3e+31 9.3e+157
+ 1000    1e+07    1e+07    1e+08    1e+08    1e+09    1e+11 1.1e+302      inf
+10000    1e+07  1.3e+07    1e+09  1.3e+09    1e+11    1e+14      inf      inf
+eserdar1@g7-21:~/i240b/submit/lab1/3-makefile$ gedit fns-compare.g[Khh
+
+(gedit:564369): Gtk-[1;33mWARNING[0m **: [34m18:25:38.663[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/i240b/submit/lab1/3-makefile$ gedit fns-compare.hh[7P./fns-compare.ccmake fns-compare
+make: 'fns-compare' is up to date.
+eserdar1@g7-21:~/i240b/submit/lab1/3-makefile$ make fns-comparegedit fns-compare.hh[7P./fns-compare
+    n constant     log2   linear     n lg    quadr    cubic     expn     fact
+    1    1e+07        0    1e+05        0    1e+03    1e+02       20        1
+   10    1e+07  3.3e+06    1e+06  3.3e+05    1e+05    1e+05    1e+04  3.6e+06
+  100    1e+07  6.6e+06    1e+07  6.6e+06    1e+07    1e+08  1.3e+31 9.3e+157
+ 1000    1e+07    1e+07    1e+08    1e+08    1e+09    1e+11 1.1e+302      inf
+10000    1e+07  1.3e+07    1e+09  1.3e+09    1e+11    1e+14      inf      inf
+eserdar1@g7-21:~/i240b/submit/lab1/3-makefile$ cd ..
+eserdar1@g7-21:~/i240b/submit/lab1$ ls
+0-hello  1-monolithic  2-separate-compilation  3-makefile  4-dependencies  5-auto-dependencies	lab1.LOG
+eserdar1@g7-21:~/i240b/submit/lab1$ cd 4-dependencies
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ ls
+constant.cc  exponential.cc  fns-compare.cc  lg.cc	Makefile  quadratic.cc
+cubic.cc     fact.cc	     fns-compare.hh  linear.cc	nlg.cc
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ c[Kget[Kdit Makefile
+
+(gedit:564688): Gtk-[1;33mWARNING[0m **: [34m18:29:21.640[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ make Makefi[K[K[K[K[K[K
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+g++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+make: *** No rule to make target 'g++', needed by 'fns-compare'.  Stop.
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ ./fns-coma[Kpare
+bash: ./fns-compare: No such file or directory
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ make F[KNa[K[KMakefile
+make: Nothing to be done for 'Makefile'.
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ make Makefile[K[K[K[K[K[K[K[K[K[K[K[K[K./fns-compare[8Pmake ./fns-compare
+bash: ./fns-compare: No such file or directory
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ ./fns-compare[K[K[K[K[K[K[K[K[K[K[Km[KMakefile
+bash: ./Makefile: Permission denied
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ gedit [K[K[K[K[K[K./Makefilefns-compare[K./fns-compare[8Pmake gedit Makefile
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ gedit Makefile[4P./Makefilefns-compare[K./fns-compare[8Pmake gedit Makefilels[Kcd 4-dependenciesls[Kcd .../fns-comparemake fns-comparegedit fns-compare.hh[7P./fns-comparegedit fns-compare.hh
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ ls
+constant.cc  cubic.o	     fact.cc	     fns-compare.hh  lg.o	Makefile  quadratic.cc
+constant.o   exponential.cc  fact.o	     fns-compare.o   linear.cc	nlg.cc	  quadratic.o
+cubic.cc     exponential.o   fns-compare.cc  lg.cc	     linear.o	nlg.o
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ lsgedit fns-compare.hh[6PMakefilefns-compare.hh
+
+(gedit:565172): Gtk-[1;33mWARNING[0m **: [34m18:31:48.284[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ gedit fns-compare.hhls[Kgedit fns-compare.hh[6PMakefile[4P./Makefilefns-compare[K./fns-compare[8Pmake gedit Makefile[9Pmake gedit Makefile[9Pmake 
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+[01m[Kfns-compare.cc:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kfns-compare.cc:28:20:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%Lg[m[K’ expects argument of type ‘[01m[Klong double[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K-Wformat=[m[K]
+       fprintf(out, [01;35m[K"%*.*Lg"[m[K, WIDTH, PREC, [32m[KfnInfo.fn(n)[m[K);
+                    [01;35m[K^~~~~~~~[m[K               [32m[K~~~~~~~~~~~~[m[K
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+g++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+make: *** No rule to make target 'g++', needed by 'fns-compare'.  Stop.
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ make gedit fns-compare.hhls[Kgedit fns-compare.hhmake [K[Kmake gedit fns-compare.hhls[Kgedit fns-compare.hh[6PMakefile[4P./Makefilefns-compare
+bash: ./fns-compare: No such file or directory
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ ls
+constant.cc  cubic.o	     fact.cc	     fns-compare.hh  lg.o	Makefile  quadratic.cc
+constant.o   exponential.cc  fact.o	     fns-compare.o   linear.cc	nlg.cc	  quadratic.o
+cubic.cc     exponential.o   fns-compare.cc  lg.cc	     linear.o	nlg.o
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ ls./fns-compare..hh[K[K[Khh
+bash: ./fns-compare.hh: Permission denied
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ ./fns-compare.hhls[K./fns-compare[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+constant.cc  cubic.o	     fact.cc	     fns-compare.hh  lg.o	Makefile  quadratic.cc
+constant.o   exponential.cc  fact.o	     fns-compare.o   linear.cc	nlg.cc	  quadratic.o
+cubic.cc     exponential.o   fns-compare.cc  lg.cc	     linear.o	nlg.o
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ ls./fns-compare.hh[K[K[K
+bash: ./fns-compare: No such file or directory
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ ./fns-compare
+bash: ./fns-compare: No such file or directory
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ ls
+constant.cc  cubic.o	     fact.cc	     fns-compare.hh  lg.o	Makefile  quadratic.cc
+constant.o   exponential.cc  fact.o	     fns-compare.o   linear.cc	nlg.cc	  quadratic.o
+cubic.cc     exponential.o   fns-compare.cc  lg.cc	     linear.o	nlg.o
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ ls./fns-compare.hh
+bash: ./fns-compare.hh: Permission denied
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ ./fns-compare.hh[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls./fns-comparels[K./fns-compare.hhls[K./fns-compare[8Pmake gedit fns-compare.hhmake [Kgedit fns-compare.hh
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ ke[K[Kame[K[K[Kmake
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+[01m[Kfns-compare.cc:[m[K In function ‘[01m[Kint main()[m[K’:
+[01m[Kfns-compare.cc:28:20:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%Lg[m[K’ expects argument of type ‘[01m[Klong double[m[K’, but argument 5 has type ‘[01m[Kdouble[m[K’ [[01;35m[K-Wformat=[m[K]
+       fprintf(out, [01;35m[K"%*.*Lg"[m[K, WIDTH, PREC, [32m[KfnInfo.fn(n)[m[K);
+                    [01;35m[K^~~~~~~~[m[K               [32m[K~~~~~~~~~~~~[m[K
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+g++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+make: *** No rule to make target 'g++', needed by 'fns-compare'.  Stop.
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ makegedit fns-compare.hh[Kls[Kls./fns-compare[K[K[K[K[K[K[K[K[K[K[K[K[K./fns-comparels[K./fns-compare.hhls[K./fns-compare[8Pmake gedit fns-compare.hh
+
+(gedit:565662): Gtk-[1;33mWARNING[0m **: [34m18:35:32.077[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ gedit fns-compare.hhmake[Kgedit fns-compare.hh[Kgedit fns-compare.hh[Kgedit fns-compare.hhmake[K
+g++ -g -Wall -std=c++17   -c -o fns-compare.o fns-compare.cc
+g++ -g -Wall -std=c++17   -c -o constant.o constant.cc
+g++ -g -Wall -std=c++17   -c -o lg.o lg.cc
+g++ -g -Wall -std=c++17   -c -o linear.o linear.cc
+g++ -g -Wall -std=c++17   -c -o nlg.o nlg.cc
+g++ -g -Wall -std=c++17   -c -o quadratic.o quadratic.cc
+g++ -g -Wall -std=c++17   -c -o cubic.o cubic.cc
+g++ -g -Wall -std=c++17   -c -o exponential.o exponential.cc
+g++ -g -Wall -std=c++17   -c -o fact.o fact.cc
+make: *** No rule to make target 'g++', needed by 'fns-compare'.  Stop.
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ make[K[K[K[Kgedit fns-compare.hhmake[Kgedit fns-compare.hhmake[Kgedit fns-compare.hh[Kls[K./fns-comparels[K./fns-compare.hhls[K./fns-compare[8Pmake gedit fns-compare.hhls[Kgedit fns-compare.hh[6PMakefile[4P./Makefilegedit Makefile
+
+(gedit:565817): Gtk-[1;33mWARNING[0m **: [34m18:36:48.038[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ gedit Makefile[Kgedit fns-compare.hhmake[K
+make: *** No rule to make target 'g++', needed by 'fns-compare'.  Stop.
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ make
+make: *** No rule to make target 'g++', needed by 'fns-compare'.  Stop.
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ make
+make: *** No rule to make target 'g++', needed by 'fns-compare'.  Stop.
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ make
+make: *** No rule to make target 'g++', needed by 'fns-compare'.  Stop.
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ 
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ make
+make: *** No rule to make target 'g++', needed by 'fns-compare'.  Stop.
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ make[C[K[K[K[Kmake[Kgedt[Kit[K[K[K[K[Kls
+constant.cc  cubic.o	     fact.cc	     fns-compare.hh  lg.o	Makefile  quadratic.cc
+constant.o   exponential.cc  fact.o	     fns-compare.o   linear.cc	nlg.cc	  quadratic.o
+cubic.cc     exponential.o   fns-compare.cc  lg.cc	     linear.o	nlg.o
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ gedit Makefile
+
+(gedit:565901): Gtk-[1;33mWARNING[0m **: [34m18:37:32.232[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ gedit Makefilels[Kmake
+g++ fns-compare.o constant.o lg.o linear.o nlg.o quadratic.o cubic.o exponential.o fact.o -o fns-compare
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ makegedit Makefilels[Kmake[K[K[K[K./fns-compare c[K
+    n constant     log2   linear     n lg    quadr    cubic     expn     fact
+    1    1e+07        0    1e+05        0    1e+03    1e+02       20        1
+   10    1e+07  3.3e+06    1e+06  3.3e+05    1e+05    1e+05    1e+04  3.6e+06
+  100    1e+07  6.6e+06    1e+07  6.6e+06    1e+07    1e+08  1.3e+31 9.3e+157
+ 1000    1e+07    1e+07    1e+08    1e+08    1e+09    1e+11 1.1e+302      inf
+10000    1e+07  1.3e+07    1e+09  1.3e+09    1e+11    1e+14      inf      inf
+eserdar1@g7-21:~/i240b/submit/lab1/4-dependencies$ cd ..
+eserdar1@g7-21:~/i240b/submit/lab1$ ls
+0-hello  1-monolithic  2-separate-compilation  3-makefile  4-dependencies  5-auto-dependencies	lab1.LOG
+eserdar1@g7-21:~/i240b/submit/lab1$ cd 5-auto=d[K[K=[K-dependencies
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ ls
+0-hello			3-makefile	cubic.cc	fns-compare.cc	linear.cc  quadratic.cc
+1-monolithic		4-dependencies	exponential.cc	fns-compare.hh	Makefile
+2-separate-compilation	constant.cc	fact.cc		lg.cc		nlg.cc
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ make
+g++ -MT linear.o -MMD -MP -MF .deps/linear.d -g -Wall -std=c++17 -c linear.cc
+g++ -MT nlg.o -MMD -MP -MF .deps/nlg.d -g -Wall -std=c++17 -c nlg.cc
+g++ -MT fact.o -MMD -MP -MF .deps/fact.d -g -Wall -std=c++17 -c fact.cc
+g++ -MT lg.o -MMD -MP -MF .deps/lg.d -g -Wall -std=c++17 -c lg.cc
+g++ -MT cubic.o -MMD -MP -MF .deps/cubic.d -g -Wall -std=c++17 -c cubic.cc
+g++ -MT exponential.o -MMD -MP -MF .deps/exponential.d -g -Wall -std=c++17 -c exponential.cc
+g++ -MT fns-compare.o -MMD -MP -MF .deps/fns-compare.d -g -Wall -std=c++17 -c fns-compare.cc
+g++ -MT constant.o -MMD -MP -MF .deps/constant.d -g -Wall -std=c++17 -c constant.cc
+g++ -MT quadratic.o -MMD -MP -MF .deps/quadratic.d -g -Wall -std=c++17 -c quadratic.cc
+g++ linear.o nlg.o fact.o lg.o cubic.o exponential.o fns-compare.o constant.o quadratic.o -o fns-compare
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ ru[K[K/.f[K[K[K./fns-compare
+    n   linear     n lg     fact     log2    cubic     expn constant    quadr
+    1    1e+05        0        1        0    1e+02       20    1e+07    1e+03
+   10    1e+06  3.3e+05  3.6e+06  3.3e+06    1e+05    1e+04    1e+07    1e+05
+  100    1e+07  6.6e+06 9.3e+157  6.6e+06    1e+08  1.3e+31    1e+07    1e+07
+ 1000    1e+08    1e+08      inf    1e+07    1e+11 1.1e+302    1e+07    1e+09
+10000    1e+09  1.3e+09      inf  1.3e+07    1e+14      inf    1e+07    1e+11
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ gedit Makefile
+
+(gedit:566217): Gtk-[1;33mWARNING[0m **: [34m18:43:00.946[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ make list[K[K[K[K[K dist
+tar -cf fns-compare.tar  -o dist
+tar: dist: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+make: *** [Makefile:22: dist] Error 2
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ make distgedit Makefile\
+> sad[K[K[K
+
+sda  
+(gedit:567307): Gtk-[1;33mWARNING[0m **: [34m18:49:04.539[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ 
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ s[Kgedit Makefile\[K
+
+(gedit:567325): Gtk-[1;33mWARNING[0m **: [34m18:49:30.248[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ gedit Makefile\[6Pmake dist
+tar -cf fns-compare.tar  -o dist
+tar: dist: Cannot stat: No such file or directory
+tar: Exiting with failure status due to previous errors
+make: *** [Makefile:22: dist] Error 2
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ make distgedit Makefile[5Pmake dist[Kmake distgedit Makefile\[K
+
+(gedit:567403): Gtk-[1;33mWARNING[0m **: [34m18:50:11.139[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ gedit Makefile[5Pmake dist
+tar -cf fns-compare.tar linear.cc nlg.cc fact.cc lg.cc cubic.cc exponential.cc fns-compare.cc constant.cc quadratic.cc linear.cc nlg.cc fact.cc lg.cc cubic.cc exponential.cc fns-compare.cc constant.cc quadratic.cc Makefile 
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ $[KMKDIR -P[Kp ~/tmp/fns-compare
+bash: MKDIR: command not found
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ MKDIR -p ~/tmp/fns-compare[1P[1P[1P[C[1P[1P[1@m[1@k[1@d[1@i[1@r
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ cd ~/tmp/fns-compare
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xcf[K[Kvf~/i240b/submit/lab1/5*fns-compare.tar
+tar: ~/i240b/submit/lab1/5*fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf~/i240b/submit/lab1/5*fns-compare.tar/*fns-compare.tar[1P*fns-compare.tar[C/fns-compare.tar
+tar: ~/i240b/submit/lab1/5*/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf~/i240b/submit/lab1/5*/fns-compare.tar[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktar -xvf ∼/i240?/submit/lab1/5*/fns-compare.tar
+tar: ∼/i240?/submit/lab1/5*/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf ∼/i240?/submit/lab1/5*/fns-compare.tar[1P/submit/lab1/5*/fns-compare.tarb/submit/lab1/5*/fns-compare.tar
+tar: ∼/i240b/submit/lab1/5*/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf ∼/i240b/submit/lab1/5*/fns-compare.tar
+tar: ∼/i240b/submit/lab1/5*/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf ∼/i240?/submit/lab1/5*/fns-compare.tar[C[1P/submit/lab1/5*/fns-compare.tarb/submit/lab1/5*/fns-compare.tar
+tar: ∼/i240b/submit/lab1/5*/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ ls
+eserdar1@g7-21:~/tmp/fns-compare$ lstar -xvf ∼/i240b/submit/lab1/5*/fns-compare.tar[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktar -xvf ∼/i240b/submit/lab1/5*/fns-compare.tar
+tar: ∼/i240b/submit/lab1/5*/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ ls
+eserdar1@g7-21:~/tmp/fns-compare$ lstar -xvf ∼/i240b/submit/lab1/5*/fns-compare.tar
+tar: ∼/i240b/submit/lab1/5*/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ make dist
+make: *** No rule to make target 'dist'.  Stop.
+eserdar1@g7-21:~/tmp/fns-compare$ l[Kcd ~/[Keserdar1@g7-21:~/tmp/fns-compare$ cd ~/[Keserdar1@g7-21:~/tmp/fns-compare$ cd ~/[Keserdar1@g7-21:~/tmp/fns-compare$ cd ~/[K[K[K[K[Kmake disttar -xvf ∼/i240b/submit/lab1/5*/fns-compare.tar[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Ktar -xvf ∼/i240b/submit/lab1/5*/fns-compare.tar[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Ktar -xvf ∼/i240b/submit/lab1/5*/fns-compare.tar[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake dist[K
+make: *** No rule to make target 'dist'.  Stop.
+eserdar1@g7-21:~/tmp/fns-compare$ make disttar -xvf ∼/i240b/submit/lab1/5*/fns-compare.tar[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Ktar -xvf ∼/i240b/submit/lab1/5*/fns-compare.tar
+tar: ∼/i240b/submit/lab1/5*/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ cd ..
+eserdar1@g7-21:~/tmp$ cd.[K[Kd ..
+eserdar1@g7-21:~$ cd [K[K[Kcd cs[K[KCS[K[KCs[K[Kcs14[K[K240
+eserdar1@g7-21:~/cs240$ ls
+announce.html  assets  exams-quizzes  hws	  index.umt  misc      README.md  umt.make
+announce.umt   docs    exercises      index.html  labs	     projects  slides
+eserdar1@g7-21:~/cs240$ cd kl[K[Klabs
+eserdar1@g7-21:~/cs240/labs$ c[Kls
+index.html  index.umt  lab0  lab1  submission
+eserdar1@g7-21:~/cs240/labs$ cd lab1
+eserdar1@g7-21:~/cs240/labs/lab1$ ls
+exercises  lab1  lab1.html  lab1.pdf  lab1.umt
+eserdar1@g7-21:~/cs240/labs/lab1$ cd ez[Kxercises
+eserdar1@g7-21:~/cs240/labs/lab1/exercises$ ls
+0-hello  1-monolithic  2-separate-compilation  3-makefile  4-dependencies  5-auto-dependencies
+eserdar1@g7-21:~/cs240/labs/lab1/exercises$ cd 5-auto-dependencies
+eserdar1@g7-21:~/cs240/labs/lab1/exercises/5-auto-dependencies$ ls
+0-hello			3-makefile	cubic.cc	fns-compare.cc	linear.cc  quadratic.cc
+1-monolithic		4-dependencies	exponential.cc	fns-compare.hh	Makefile
+2-separate-compilation	constant.cc	fact.cc		lg.cc		nlg.cc
+eserdar1@g7-21:~/cs240/labs/lab1/exercises/5-auto-dependencies$ cd [K[K[Kgedit Makefile
+
+(gedit:568782): Gtk-[1;33mWARNING[0m **: [34m19:01:48.189[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/cs240/labs/lab1/exercises/5-auto-dependencies$ MAKE[K[K[K[Kmake dist
+tar -cf fns-compare.tar linear.cc nlg.cc fact.cc lg.cc cubic.cc exponential.cc fns-compare.cc constant.cc quadratic.cc linear.cc nlg.cc fact.cc lg.cc cubic.cc exponential.cc fns-compare.cc constant.cc quadratic.cc Makefile
+eserdar1@g7-21:~/cs240/labs/lab1/exercises/5-auto-dependencies$ cd ~/tmp/fns-compare
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf ~[K[K[K[K[K[K[K[K[K[Ktar -xvf ∼/i240?/submit/lab1/5*/fns-compare.tar[C[1P/submit/lab1/5*/fns-compare.tarb/submit/lab1/5*/fns-compare.tar
+tar: ∼/i240b/submit/lab1/5*/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf ∼/i240b/submit/lab1/5*/fns-compare.tar
+tar: ∼/i240b/submit/lab1/5*/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ cd i240b
+bash: cd: i240b: No such file or directory
+eserdar1@g7-21:~/tmp/fns-compare$ cd i240b[K[K[K[K[K[K[K[Kcd ..
+eserdar1@g7-21:~/tmp$ cd. [K[K ..
+eserdar1@g7-21:~$ ls
+Arduino  cs240	  Documents  i240b  Ins.c  Pictures  Public	tmp
+cs120	 Desktop  Downloads  ins    Music  projects  Templates	Videos
+eserdar1@g7-21:~$ cd cs240
+eserdar1@g7-21:~/cs240$ cd ∼/tmp/fns-compare
+bash: cd: ∼/tmp/fns-compare: No such file or directory
+eserdar1@g7-21:~/cs240$ cd ..
+eserdar1@g7-21:~$ cd ..∼/tmp/fns-compare
+bash: cd: ∼/tmp/fns-compare: No such file or directory
+eserdar1@g7-21:~$ cd ∼/tmp/fns-compare[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ktmp[K[K[Kcd m[Ktmp
+eserdar1@g7-21:~/tmp$ ls
+fns-compare  lab0
+eserdar1@g7-21:~/tmp$ cd fns-compare
+eserdar1@g7-21:~/tmp/fns-compare$ ls
+fns-compare.tar
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf ∼/i240?/submit/lab1/5*/fns-compare.tar
+tar: ∼/i240?/submit/lab1/5*/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf ∼/i240?/submit/lab1/5*/fns-compare.tar[C[1P/submit/lab1/5*/fns-compare.tarb/submit/lab1/5*/fns-compare.tar[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+tar: ∼/i240b/submit/lab1/5*/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf ∼/i240b/submit/lab1/5*/fns-compare.tar[1P/fns-compare.tar-/fns-compare.tard/fns-compare.tare/fns-compare.tarp/fns-compare.tare/fns-compare.tarn/fns-compare.tar[1P/fns-compare.tar[1P/fns-compare.tar[1P/fns-compare.tar[1P/fns-compare.tar[1P/fns-compare.tara/fns-compare.taru/fns-compare.tart/fns-compare.taro/fns-compare.tar-/fns-compare.tard/fns-compare.tare/fns-compare.tarp/fns-compare.tare/fns-compare.tarn/fns-compare.tard/fns-compare.tare/fns-compare.tarn/fns-compare.tarc/fns-compare.tari/fns-compare.tare/fns-compare.tars/fns-compare.tar
+tar: ∼/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf ∼/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar
+tar: ∼/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf ∼/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar
+tar: ∼/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ cd ..
+eserdar1@g7-21:~/tmp$ cd ..
+eserdar1@g7-21:~$ cd[K[Kls
+Arduino  cs240	  Documents  i240b  Ins.c  Pictures  Public	tmp
+cs120	 Desktop  Downloads  ins    Music  projects  Templates	Videos
+eserdar1@g7-21:~$ cd cs2[K[K[Ki240b
+eserdar1@g7-21:~/i240b$ ls
+README.md  submit
+eserdar1@g7-21:~/i240b$ cd submit
+eserdar1@g7-21:~/i240b/submit$ ls
+lab0.LOG  lab1
+eserdar1@g7-21:~/i240b/submit$ la[K[Kcd lab1
+eserdar1@g7-21:~/i240b/submit/lab1$ ls
+0-hello  1-monolithic  2-separate-compilation  3-makefile  4-dependencies  5-auto-dependencies	lab1.LOG
+eserdar1@g7-21:~/i240b/submit/lab1$ cd 5*
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ ls
+0-hello			4-dependencies	cubic.o		fact.o		fns-compare.o	 linear.cc  nlg.o
+1-monolithic		constant.cc	exponential.cc	fns-compare	fns-compare.tar  linear.o   quadratic.cc
+2-separate-compilation	constant.o	exponential.o	fns-compare.cc	lg.cc		 Makefile   quadratic.o
+3-makefile		cubic.cc	fact.cc		fns-compare.hh	lg.o		 nlg.cc
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ cd [K[K[Kgedit fns[K[K[KMakefile
+
+(gedit:570127): Gtk-[1;33mWARNING[0m **: [34m19:13:16.334[0m: Calling org.xfce.Session.Manager.Inhibit failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method "Inhibit" with signature "susu" on interface "org.xfce.Session.Manager" doesn't exist
+
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ ls
+0-hello			4-dependencies	cubic.o		fact.o		fns-compare.o	 linear.cc  nlg.o
+1-monolithic		constant.cc	exponential.cc	fns-compare	fns-compare.tar  linear.o   quadratic.cc
+2-separate-compilation	constant.o	exponential.o	fns-compare.cc	lg.cc		 Makefile   quadratic.o
+3-makefile		cubic.cc	fact.cc		fns-compare.hh	lg.o		 nlg.cc
+eserdar1@g7-21:~/i240b/submit/lab1/5-auto-dependencies$ cd /[K..
+eserdar1@g7-21:~/i240b/submit/lab1$ cd ..
+eserdar1@g7-21:~/i240b/submit$ cd..[K[K ..
+eserdar1@g7-21:~/i240b$ cd ..
+eserdar1@g7-21:~$ ls
+Arduino  cs240	  Documents  i240b  Ins.c  Pictures  Public	tmp
+cs120	 Desktop  Downloads  ins    Music  projects  Templates	Videos
+eserdar1@g7-21:~$ cd tmp
+eserdar1@g7-21:~/tmp$ ls
+fns-compare  lab0
+eserdar1@g7-21:~/tmp$ cd d[Kfns-compare
+eserdar1@g7-21:~/tmp/fns-compare$ ls
+eserdar1@g7-21:~/tmp/fns-compare$ cd[K[Klscd fns-comparels[Kcd tmp[4Plscd ..[3Plsgedit Makefilels[Kcd 5*[3Plscd lab1ls[Kcd submitls[Kcd i240bls[Kcd ..tar -xvf ∼/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar
+tar: ∼/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf~/i13[K[K240bv[K/submit/lab1/5*/fns-compare.tar
+tar: ~/i240b/submit/lab1/5*/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ ^C
+eserdar1@g7-21:~/tmp/fns-compare$ ^C
+eserdar1@g7-21:~/tmp/fns-compare$ ldd /arm-mingw32ce-g++
+ldd: /arm-mingw32ce-g++: No such file or directory
+eserdar1@g7-21:~/tmp/fns-compare$ ls -l ~/i240b/submit/lab1/5*/fns-compare.tar
+-rw-r--r-- 1 eserdar1 eserdar1 20480 Jan 30 18:50 /home/eserdar1/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar
+eserdar1@g7-21:~/tmp/fns-compare$ ls -l ~/i240b/submit/lab1/5*/fns-compare.tar[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Pdd /arm-mingw32ce-g++tar -xvf~/i240b/submit/lab1/5*/fns-compare.tar[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K/home/eserdar1/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar
+linear.cc
+nlg.cc
+fact.cc
+lg.cc
+cubic.cc
+exponential.cc
+fns-compare.cc
+constant.cc
+quadratic.cc
+linear.cc
+nlg.cc
+fact.cc
+lg.cc
+cubic.cc
+exponential.cc
+fns-compare.cc
+constant.cc
+quadratic.cc
+Makefile
+eserdar1@g7-21:~/tmp/fns-compare$ make
+g++ -MT linear.o -MMD -MP -MF .deps/linear.d -g -Wall -std=c++17 -c linear.cc
+[01m[Klinear.cc:1:10:[m[K [01;31m[Kfatal error: [m[Kfns-compare.hh: No such file or directory
+ #include [01;31m[K"fns-compare.hh"[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make: *** [Makefile:50: linear.o] Error 1
+eserdar1@g7-21:~/tmp/fns-compare$ ls
+constant.cc  cubic.cc  exponential.cc  fact.cc	fns-compare.cc	lg.cc  linear.cc  Makefile  nlg.cc  quadratic.cc
+eserdar1@g7-21:~/tmp/fns-compare$ [Keserdar1@g7-21:~/tmp/fns-compare$ gedi [Kt linear.cc
+eserdar1@g7-21:~/tmp/fns-compare$ [Keserdar1@g7-21:~/tmp/fns-compare$ gedit linear.ccls[Kgedit linear.ccls[Kmaketar -xvf/home/eserdar1/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[32Pls -l ~/i240b/submit/lab1/5*/fns-compare.tar[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctar -xvf/home/eserdar1/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar
+linear.cc
+nlg.cc
+fact.cc
+lg.cc
+cubic.cc
+exponential.cc
+fns-compare.cc
+constant.cc
+quadratic.cc
+linear.cc
+nlg.cc
+fact.cc
+lg.cc
+cubic.cc
+exponential.cc
+fns-compare.cc
+constant.cc
+quadratic.cc
+Makefile
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf/home/eserdar1/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kls
+constant.cc  exponential.cc  fns-compare.cc  lg.cc	Makefile  quadratic.cc
+cubic.cc     fact.cc	     fns-compare.hh  linear.cc	nlg.cc
+eserdar1@g7-21:~/tmp/fns-compare$ lstar -xvf/home/eserdar1/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit linear.cc[Kls[K[K[Kmake
+g++ -MT linear.o -MMD -MP -MF .deps/linear.d -g -Wall -std=c++17 -c linear.cc
+g++ -MT fact.o -MMD -MP -MF .deps/fact.d -g -Wall -std=c++17 -c fact.cc
+g++ -MT nlg.o -MMD -MP -MF .deps/nlg.d -g -Wall -std=c++17 -c nlg.cc
+g++ -MT cubic.o -MMD -MP -MF .deps/cubic.d -g -Wall -std=c++17 -c cubic.cc
+g++ -MT exponential.o -MMD -MP -MF .deps/exponential.d -g -Wall -std=c++17 -c exponential.cc
+g++ -MT fns-compare.o -MMD -MP -MF .deps/fns-compare.d -g -Wall -std=c++17 -c fns-compare.cc
+g++ -MT constant.o -MMD -MP -MF .deps/constant.d -g -Wall -std=c++17 -c constant.cc
+g++ -MT quadratic.o -MMD -MP -MF .deps/quadratic.d -g -Wall -std=c++17 -c quadratic.cc
+g++ -MT lg.o -MMD -MP -MF .deps/lg.d -g -Wall -std=c++17 -c lg.cc
+g++ linear.o fact.o nlg.o cubic.o exponential.o fns-compare.o constant.o quadratic.o lg.o -o fns-compare
+eserdar1@g7-21:~/tmp/fns-compare$ ./fns [K=c[K[K-compare
+    n   linear     fact     n lg    cubic     expn constant    quadr     log2
+    1    1e+05        1        0    1e+02       20    1e+07    1e+03        0
+   10    1e+06  3.6e+06  3.3e+05    1e+05    1e+04    1e+07    1e+05  3.3e+06
+  100    1e+07 9.3e+157  6.6e+06    1e+08  1.3e+31    1e+07    1e+07  6.6e+06
+ 1000    1e+08      inf    1e+08    1e+11 1.1e+302    1e+07    1e+09    1e+07
+10000    1e+09      inf  1.3e+09    1e+14      inf    1e+07    1e+11  1.3e+07
+eserdar1@g7-21:~/tmp/fns-compare$ [Keserdar1@g7-21:~/tmp/fns-compare$ [Keserdar1@g7-21:~/tmp/fns-compare$ [Keserdar1@g7-21:~/tmp/fns-compare$ ./fns-comparemake[K[2Plstar -xvf/home/eserdar1/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit linear.cc[Ktar -xvf/home/eserdar1/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar^C
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf/home/eserdar1/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar
+tar: /home/eserdar1/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf/home/eserdar1/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar
+tar: /home/eserdar1/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar: Cannot open: No such file or directory
+tar: Error is not recoverable: exiting now
+eserdar1@g7-21:~/tmp/fns-compare$ tar -xvf/home/eserdar1/i240b/submit/lab1/5-auto-dependencies/fns-compare.tar[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kexit
+There are stopped jobs.
+eserdar1@g7-21:~/tmp/fns-compare$ exit
+[K[K
+Script done on 2020-01-30 20:00:45-05:00 [COMMAND_EXIT_CODE="2"]
