@@ -1,0 +1,353 @@
+Script started on 2020-04-01 20:52:03-04:00 [TERM="xterm" TTY="/dev/pts/8" COLUMNS="127" LINES="24"]
+eserdar1@remote05:~/i240b/submit/lab8$ cd cs240 [K[K[K[K[K[K[K[K[Kcd
+eserdar1@remote05:~$ cd cs240
+eserdar1@remote05:~/cs240$ ls
+announce.html  assets  docs	      exercises  index.html  labs  online    README.md	umt.make
+announce.umt   bin     exams-quizzes  hws	 index.umt   misc  projects  slides
+eserdar1@remote05:~/cs240$ cd labs
+eserdar1@remote05:~/cs240/labs$ ls
+index.html  index.umt  lab0  lab1  lab2  lab3  lab4  lab5  lab6  lab7  lab8  lab9  submission
+eserdar1@remote05:~/cs240/labs$ git pull'[K
+eserdar1@remote.cs.binghamton.edu's password: 
+Permission denied, please try again.
+eserdar1@remote.cs.binghamton.edu's password: 
+
+[1]+  Stopped                 git pull
+eserdar1@remote05:~/cs240/labs$ CD LAB[K[K[K[K[K[Kcd lab8
+eserdar1@remote05:~/cs240/labs/lab8$ ls
+exercises  lab8  lab8.html  lab8.pdf  lab8.umt
+eserdar1@remote05:~/cs240/labs/lab8$ cd ~/o24[K[K[Ki240b?/submit/lab8[1P/submit/lab8
+eserdar1@remote05:~/i240b/submit/lab8$ cp -4[Kr ~?[K/xc[K[Kcx[Ks240/labs/lab8/ e[K[Kexercises .
+eserdar1@remote05:~/i240b/submit/lab8$ ls'[K
+exercises  lab8.LOG
+eserdar1@remote05:~/i240b/submit/lab8$ cd exercises/
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ls
+3-subshells
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ cd [K[K[Ken[K[Kenv [K
+SHELL=/bin/bash
+DERBY_HOME=/usr/lib/jvm/java-8-oracle/db
+JAVA_HOME=/usr/lib/jvm/java-8-oracle
+KRB5CCNAME=FILE:/tmp/krb5cc_14788_lcCDrCmJ9v
+PWD=/home/eserdar1/i240b/submit/lab8/exercises
+LOGNAME=eserdar1
+XDG_SESSION_TYPE=tty
+J2REDIR=/usr/lib/jvm/java-8-oracle/jre
+VIRTUALENVWRAPPER_SCRIPT=/usr/share/virtualenvwrapper/virtualenvwrapper.sh
+HOME=/home/eserdar1
+LANG=en_US.UTF-8
+_VIRTUALENVWRAPPER_API= mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv
+SSH_CONNECTION=198.255.148.51 50884 128.226.114.205 22
+XDG_SESSION_CLASS=user
+TERM=xterm
+J2SDKDIR=/usr/lib/jvm/java-8-oracle
+USER=eserdar1
+DISPLAY=localhost:12.0
+SHLVL=5
+XDG_SESSION_ID=227841
+CLASSPATH=.:/home/eserdar1/cs240/lib
+LD_LIBRARY_PATH=.:/home/eserdar1/cs240/lib
+XDG_RUNTIME_DIR=/run/user/14788
+SSH_CLIENT=198.255.148.51 50884 22
+PATH=/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/14788/bus
+MAIL=/var/mail/eserdar1
+SSH_TTY=/dev/pts/8
+OLDPWD=/home/eserdar1/i240b/submit/lab8
+_=/usr/bin/env
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ 
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ d[Keh[K[Kecho $HOME
+/home/eserdar1
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ echo $HOME[K[K[K[Kpath[K[K[K[KPATH
+/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ E[Keh[Kcho xxx$xxx
+
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ xxx=[K=23[K[K123
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ exh[K[Kcho $xxx
+123
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ env | grep $xxx[1Pxxx
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ export xxx
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ env gt[Krep xx
+4 c c ^C
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ rmv [K[K[K[Krnv[K[K[Kenv | grep xx
+xxx=123
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ec[Kxport xx [K=456
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ env gr[K[K[K |g[K grep xx
+xxx=123
+xx=456
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ $[Keh[Kcho $PATH
+/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ [Keserdar1@remote05:~/i240b/submit/lab8/exercises$ [Keserdar1@remote05:~/i240b/submit/lab8/exercises$ export p [K=PATHp[K[K[K[K[K[K[K[K[K[K[K[K[K[Kp [K=Pa[KATJ[KH
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ echo $p
+PATH
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ /home/eserdar1/cs240/bin[Keserdar1@remote05:~/i240b/submit/lab8/exercises$ /home/eserdar1/cs240/bin/home/eserdar1/cs240/bin/home/eserdar1/cs240/bin[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-ava-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+bash: /home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-ava-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin: No such file or directory
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ p=/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-ava-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ echo p$[K[K[4[K[Kp[Kp$[K[K$p
+/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-ava-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ pag[K[K[KPATH
+bash: PATH: command not found
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ env | grp[Kep PATH
+CLASSPATH=.:/home/eserdar1/cs240/lib
+LD_LIBRARY_PATH=.:/home/eserdar1/cs240/lib
+PATH=/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ env g[K|[K[K[K[K[Kexport p=[K[Kp=456[K[K[KPATH
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ export p=PATHnv | grep PATHPATH[Kenv | grep PATH[K[K[K[Kp
+KRB5CCNAME=FILE:/tmp/krb5cc_14788_lcCDrCmJ9v
+p=PATH
+VIRTUALENVWRAPPER_SCRIPT=/usr/share/virtualenvwrapper/virtualenvwrapper.sh
+_VIRTUALENVWRAPPER_API= mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/14788/bus
+SSH_TTY=/dev/pts/8
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ p[Kehp[K[Kcho $p
+PATH
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ p=/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-ava-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ e[Kexport p
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ env |g[K grep p
+KRB5CCNAME=FILE:/tmp/krb5cc_14788_lcCDrCmJ9v
+p=/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-ava-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+VIRTUALENVWRAPPER_SCRIPT=/usr/share/virtualenvwrapper/virtualenvwrapper.sh
+_VIRTUALENVWRAPPER_API= mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/14788/bus
+SSH_TTY=/dev/pts/8
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ evh[K[Kchom[K$p[KAP[K[K[K $PST[K[KATH
+/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ P  [K[K[Kp = $PATH
+bash: p: command not found
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ e[Kp+[K=$pa[K[KAP[K[KPATH
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ export [K[K[K[K[K[K[Kecho $p
+/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ exp[K[K[Kexport p
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ env \[K| grep a[KPATH
+CLASSPATH=.:/home/eserdar1/cs240/lib
+LD_LIBRARY_PATH=.:/home/eserdar1/cs240/lib
+PATH=/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ env | grep p
+KRB5CCNAME=FILE:/tmp/krb5cc_14788_lcCDrCmJ9v
+p=/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+VIRTUALENVWRAPPER_SCRIPT=/usr/share/virtualenvwrapper/virtualenvwrapper.sh
+_VIRTUALENVWRAPPER_API= mkvirtualenv rmvirtualenv lsvirtualenv showvirtualenv workon add2virtualenv cdsitepackages cdvirtualenv lssitepackages toggleglobalsitepackages cpvirtualenv setvirtualenvproject mkproject cdproject mktmpenv
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/14788/bus
+SSH_TTY=/dev/pts/8
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ $pa[K[KPATH=[K[K[K[K[K[KPa[KATH=
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ech[K[K[KECHO [K[K[K[K[Kecho $PATH
+
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ x=PATH
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ echo $x
+PATH
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ls
+bash: ls: No such file or directory
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ echo $p
+/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ env | grep p
+bash: grep: No such file or directory
+bash: env: No such file or directory
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ pa[K[KPATH=p[K$p
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ echo $PATH
+/home/eserdar1/cs240/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ls
+3-subshells
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ls ; wc *
+3-subshells
+wc: 3-subshells: Is a directory
+      0       0       0 3-subshells
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ find -L ~/cs40 -name '.c[K[K*c[K,c'[1Pc'.c'[C[C
+find: ‘/home/eserdar1/cs40’: No such file or directory
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ find -L ~/cs40 -name '*.c'[C[C[C[C[C[1@1[1P[1@2
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ls find -L ~/cs240 -name '*.c'[1@l[1@s[1@ 
+ls: invalid option -- 'e'
+Try 'ls --help' for more information.
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ls find -L ~/cs240 -name '*.c'[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C \[K| wc-l
+bash: wc-l: command not found
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ find -L ~/cs240 -name '*.c' | wc-l -l
+0
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ls ~/cs240
+announce.html  assets  docs	      exercises  index.html  labs  online    README.md	umt.make
+announce.umt   bin     exams-quizzes  hws	 index.umt   misc  projects  slides
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ls ~/cs240/labs
+index.html  index.umt  lab0  lab1  lab2  lab3  lab4  lab5  lab6  lab7  lab8  lab9  submission
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ls ~/cs240/labs/lab3/exercises
+1-greet  2-greet  3-greet  4-sortnums  5-numpaths  data  Makefile
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ls ~/cs240/labs/lab3/exercises,[K/1-greet
+greet.cc  README
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ls ~/cs240/labs/lab3/exercises/1-greet[C[C[1P ~/cs240/labs/lab3/exercises/1-greet[1P ~/cs240/labs/lab3/exercises/1-greet[6Pls ~/cs240/labs/lab3/exercises[K[Kfind -L ~/cs240 -name '*.c' | wc -lls ~/cs240[K/labs/lab3/exercises[C ~/cs240/labs/lab3/exercises/1-greet[6Pls ~/cs240/labs/lab3/exercises ~/cs240/labs/lab3/exercises/1-greetf ~/cs240/labs/lab3/exercises/1-greeti ~/cs240/labs/lab3/exercises/1-greetn ~/cs240/labs/lab3/exercises/1-greetd ~/cs240/labs/lab3/exercises/1-greet[C ~/cs240/labs/lab3/exercises/1-greet- ~/cs240/labs/lab3/exercises/1-greetL ~/cs240/labs/lab3/exercises/1-greet[C ~/cs240/labs/lab3/exercises/1-greet[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -name '* .c' wcm[K -l
+find: paths must precede expression: `wc'
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ find -L  ~/cs240/labs/lab3/exercises/1-greet -name '*.c' wc -l[C[1@ [1@|[C[1@ 
+0
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ find -L  ~/cs240/labs/lab3/exercises/1-greet -name '*.c' |  wc -l[1@c
+1
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ sleep 100 #[K&
+[2] 3926410
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ jobs
+[1]+  Stopped                 git pull  (wd: ~/cs240/labs)
+[2]-  Running                 sleep 100 &
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ kill %1
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ cd 3-subshells/
+[1]-  Terminated              git pull  (wd: ~/cs240/labs)
+(wd now: ~/i240b/submit/lab8/exercises/3-subshells)
+[2]+  Done                    sleep 100  (wd: ~/i240b/submit/lab8/exercises)
+(wd now: ~/i240b/submit/lab8/exercises/3-subshells)
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ [Keserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ [Keserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ cd `[K`[K~[Keserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ cd ~[Keserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ cd ~
+eserdar1@remote05:~$ pwd
+/home/eserdar1
+eserdar1@remote05:~$ xx+1[K[K=123
+eserdar1@remote05:~$ pwd; echo $xx; (xx=abc; cd /; pwd [K; echo $xx)'[K[K;)[K[K); pwd; eh[K ho[Keserdar1@remote05:~$ pwd; echo $xx; (xx=abc; cd /; pwd; echo $xx); pwd; e ho[K[K[Kcho $xx;
+/home/eserdar1
+123
+/
+abc
+/home/eserdar1
+123
+eserdar1@remote05:~$ ome/eserdar1[K[K[K[K[K[K[K[K[K[K[K[Kls
+Arduino  cs120	cs220  cs240  Desktop  Documents  Downloads  exam_trainings  i240b  ins  Ins.c	Music  Pictures  projects  Public  Templates  tmp  trainings  trainingsForC++  Videos
+eserdar1@remote05:~$ cd cs240[K[K[K[K[Ki40[K[K42[K[K240b
+eserdar1@remote05:~/i240b$ cd 3[K[K [K[K[Kls
+README.md  submit
+eserdar1@remote05:~/i240b$ cd submit/
+eserdar1@remote05:~/i240b/submit$ ls
+lab0  lab0.LOG	lab1  lab2  lab3  lab4	lab5  lab6  lab7  lab8	prj1-sol  prj2-sol
+eserdar1@remote05:~/i240b/submit$ ls[K[Kcd lab8
+eserdar1@remote05:~/i240b/submit/lab8$ ls
+exercises  lab8.LOG
+eserdar1@remote05:~/i240b/submit/lab8$ cd exercises/
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ls
+3-subshells
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ cd 3
+bash: cd: 3: No such file or directory
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ cd 3-subshells/
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ ls
+Makefile
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ [Keserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ make
+cd ~/cs240
+ls
+Makefile
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ make
+cd ~/cs240
+ls
+Makefile
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ gedit makefile [K&
+[1] 3928325
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ gedit Makefile&
+[2] 3928388
+[1]   Done                    gedit makefile
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ make
+(cd ~/cs240 ; ls)
+announce.html  bin	      exercises   index.umt  online	slides
+announce.umt   docs	      hws	  labs	     projects	umt.make
+assets	       exams-quizzes  index.html  misc	     README.md
+[2]+  Done                    gedit Makefile
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ grep i0[K[K=[K-i 'MAIN [K(' 'F IND[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cf ind ~/cs240/projects -name '*.cc';[K'
+grep: find ~/cs240/projects -name *.cc: No such file or directory
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ grep -i 'MAIN(' 'find ~/cs240/projects -name '*.cc''[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmake[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgrep -i 'MAIN(' 'find ~/cs240/projects -name '*.cc''[K[Aeserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ grep -i 'MAIN(' 'find ~/cs240/projects -name '*.cc''[K[Aeserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ grep -i 'MAIN(' 'find ~/cs240/projects -name '*.cc''
+grep: find ~/cs240/projects -name *.cc: No such file or directory
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ grep -i 'MAIN(' `find ∼/cs240/projects -name '*.cc'`
+find: ‘∼/cs240/projects’: No such file or directory
+c ^C
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ grep -i 'MAIN(' `find ∼/cs240/projects -name '*.cc'`
+find: ‘∼/cs240/projects’: No such file or directory
+^[[A    ^C
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ ls ~/cs23[K40
+announce.html  announce.umt  assets  bin  docs	exams-quizzes  exercises  hws  index.html  index.umt  labs  misc  online  projects  README.md  slides  umt.make
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ ls ~/cs240grep -i 'MAIN(' `find ∼/cs240/projects -name '*.cc'`
+find: ‘∼/cs240/projects’: No such file or directory
+^C
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ grep -i 'MAIN(' `find ~/cs240/projects -name '*.cc'
+> ^C
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ grep -i 'MAIN(' `find ~/cs240/projects -name '*.cc'
+> ^C
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ grep -i 'MAIN(' `find ~/cs240/projects -name '*.cc'∼/cs240/projects -name '*.cc'`
+find: ‘∼/cs240/projects’: No such file or directory
+^C
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ cd `[K~
+eserdar1@remote05:~$ cd ~grep -i 'MAIN(' `find ∼/cs240/projects -name '*.cc'`
+find: ‘∼/cs240/projects’: No such file or directory
+ls
+^C
+eserdar1@remote05:~$ ls
+Arduino  cs220	Desktop    Downloads	   i240b  Ins.c  Pictures  Public     tmp	 trainingsForC++
+cs120	 cs240	Documents  exam_trainings  ins	  Music  projects  Templates  trainings  Videos
+eserdar1@remote05:~$ cd cs240
+eserdar1@remote05:~/cs240$ ;s
+bash: syntax error near unexpected token `;'
+eserdar1@remote05:~/cs240$ ls
+announce.html  announce.umt  assets  bin  docs	exams-quizzes  exercises  hws  index.html  index.umt  labs  misc  online  projects  README.md  slides  umt.make
+eserdar1@remote05:~/cs240$ cd 
+eserdar1@remote05:~$ cd c[Ki240b
+eserdar1@remote05:~/i240b$ cd submit/
+eserdar1@remote05:~/i240b/submit$ ls
+lab0  lab0.LOG	lab1  lab2  lab3  lab4	lab5  lab6  lab7  lab8	prj1-sol  prj2-sol
+eserdar1@remote05:~/i240b/submit$ d[Kcd a[Klab8
+eserdar1@remote05:~/i240b/submit/lab8$ ls
+exercises  lab8.LOG
+eserdar1@remote05:~/i240b/submit/lab8$ cd ez[Kxercises/
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ ls
+3-subshells
+eserdar1@remote05:~/i240b/submit/lab8/exercises$ cd 3-subshells/
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ l[Kls
+Makefile
+eserdar1@remote05:~/i240b/submit/lab8/exercises/3-subshells$ lscd 3-subshells/ls[K[K[Kcd
+eserdar1@remote05:~$ cd i240b][K\[K/submit/lab8
+eserdar1@remote05:~/i240b/submit/lab8$ ls
+exercises  lab8.LOG
+eserdar1@remote05:~/i240b/submit/lab8$ lscd i240b/submit/lab8[Klscd 3-subshells/ls[Kcd exercises/ls[K[K[Kcop[K[K[Kjobs
+eserdar1@remote05:~/i240b/submit/lab8$ grep -i 'MAIN(' `find ∼/cs240/projects -name '*.cc'`
+find: ‘∼/cs240/projects’: No such file or directory
+^C
+eserdar1@remote05:~/i240b/submit/lab8$ ls ~/i[Kcs240/projects
+index.html  index.umt  prj1  prj1-sol  prj2  prj2-sol
+eserdar1@remote05:~/i240b/submit/lab8$ prj[K[K[Kls ~/cs240/projects/prj1
+prj1  prj1.html  prj1.pdf  prj1.umt
+eserdar1@remote05:~/i240b/submit/lab8$ ls ~/cs240/projects/prj1[Kgrep -i 'MAIN(' `find ∼/cs240/projects -name '*.cc'`[C[C[1P'`[1P'`u'`m'`t'`
+find: ‘∼/cs240/projects’: No such file or directory
+^C
+eserdar1@remote05:~/i240b/submit/lab8$ grep -i 'MAIN(' `find ∼/cs240/projects -name '*.umt'`[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[29Pls ~/cs240/projects/prj1[K[K[K[Kprj2-sol
+arrayseq.hh  command.cc  command.hh  dlinkseq.hh  Makefile  nums.cc  seq.hh  seq-test.cc
+eserdar1@remote05:~/i240b/submit/lab8$ ls ~/cs240/projects/prj2-solgrep -i 'MAIN(' `find ∼/cs240/projects -name '*.umt'`[1@.[1P[1@/[1@p[1@r[1@o[1P[1@j[1@2[1@-[1@s[1@o[1@l
+find: ‘∼/cs240/projects/prj2-sol’: No such file or directory
+ ^C
+eserdar1@remote05:~/i240b/submit/lab8$ grep -i 'MAIN(' `find ∼/cs240/projects/prj2-sol -name '*.umt'`[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgrep -i 'MAIN(' `find ~/cs240/projects -name '*.cc' `
+/home/eserdar1/cs240/projects/prj1-sol/wordcounts.cc:main(int argc, char *argv[])
+/home/eserdar1/cs240/projects/prj2/extras/seq-test.cc:int main(int argc, char *argv[]) {
+/home/eserdar1/cs240/projects/prj2-sol/nums.cc:int main(int argc, char* argv[])
+/home/eserdar1/cs240/projects/prj2-sol/seq-test.cc:int main(int argc, char *argv[]) {
+eserdar1@remote05:~/i240b/submit/lab8$ /[K?;[K'[K:
+bash: ?:: command not found
+eserdar1@remote05:~/i240b/submit/lab8$ ?:[K[Kecho $?
+127
+eserdar1@remote05:~/i240b/submit/lab8$ fak[Klse ;[K[K; echo 123[K[K[K[K[K[K[K[Kecho 123
+123
+eserdar1@remote05:~/i240b/submit/lab8$ tru ; ec[K[K[K[K[K; echo 123
+bash: tru: command not found
+123
+eserdar1@remote05:~/i240b/submit/lab8$ tru; echo 123[C[C[1@e
+123
+eserdar1@remote05:~/i240b/submit/lab8$ false && echo 123
+eserdar1@remote05:~/i240b/submit/lab8$ true && echp[Ko123 123[C[C[C
+123
+eserdar1@remote05:~/i240b/submit/lab8$ false \\[K[K|| echo 123
+123
+eserdar1@remote05:~/i240b/submit/lab8$ true || echp [K[Ko 123
+eserdar1@remote05:~/i240b/submit/lab8$ sleep 10
+echo 123eserdar1@remote05:~/i240b/submit/lab8$ echo 123[K[K[K[K[K[K[K[Ksleep 20
+echo 123456
+eserdar1@remote05:~/i240b/submit/lab8$ echo 123456
+123456
+eserdar1@remote05:~/i240b/submit/lab8$ e[Ksleep 5
+echo 123
+eserdar1@remote05:~/i240b/submit/lab8$ echo 123
+123
+eserdar1@remote05:~/i240b/submit/lab8$ echo 123[1Psleep 5
+echo 123 sleep 5
+eserdar1@remote05:~/i240b/submit/lab8$ echo 123 sleep 5
+123 sleep 5
+eserdar1@remote05:~/i240b/submit/lab8$ sleep 5
+echo 123
+s; leep5  5
+eserdar1@remote05:~/i240b/submit/lab8$ echo 123
+123
+eserdar1@remote05:~/i240b/submit/lab8$ sleep 5
+eserdar1@remote05:~/i240b/submit/lab8$ exit
+
+Script done on 2020-04-01 22:36:31-04:00 [COMMAND_EXIT_CODE="0"]
