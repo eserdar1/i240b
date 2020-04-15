@@ -1,0 +1,1149 @@
+Script started on 2020-04-11 17:17:08-04:00 [TERM="xterm" TTY="/dev/pts/7" COLUMNS="91" LINES="24"]
+eserdar1@remote07:~/i240b/submit/lab9$ cp -r ~/cs240/labs/lab9 [K/exercises .
+eserdar1@remote07:~/i240b/submit/lab9$ ls
+exercises  lab9.LOG
+eserdar1@remote07:~/i240b/submit/lab9$ cd exercises/
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  Makefile  plot.gp
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ seq 5
+1
+2
+3
+4
+5
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ seq 2 11
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ se1[Kq 2 2 11
+2
+4
+6
+8
+10
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ seq 11 -2 2
+11
+9
+7
+5
+3
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 22 33 44; do echo $x; done
+22
+33
+44
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 'seq 100 -20 0[K0' do echo $x; done
+bash: syntax error near unexpected token `done'
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 'seq 100 -20 0' do echo $x; done[C[C[C[C[C[C[C[C[C[Kfor x in 'seq 100 -20 0' do echo $x; done[C[C[C;' do echo $x; done [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; do echo $x; done [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+seq 100 -20 0
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 100 80 60 40 20 0; do echo $x; do ne
+100
+80
+60
+40
+20
+0
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ echo $r[KRandom[K[K[K[K[Ka[KANDOM
+178
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ echo $Rand[K[K[KADON[K[K[KNDOM
+10126
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ echo $RANDOM
+27996
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 'seq 50' [K; do echo -n '[K" $Ra[KANDOM "[K[K "; DN[K[Kdone
+ 13750 eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 'seq 50'; do echo -n " $RANDOM ";done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ";do[1Pne[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca ";done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ";do[1Pne[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C$ ";done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cr ";done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CR ";done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ";[1Pdone[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ";d[1Pone[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CR ";done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CA ";done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CN ";doneD ";done[CO ";done[C[CM ";done[C[C[C
+ 17685 eserdar1@remote07:~/i240b/submit/lab9/exercises$ [Keserdar1@remote07:~/i240b/submit/lab9/exercises$ [Keserdar1@remote07:~/i240b/submit/lab9/exercises$ [Keserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 'seq 50'; do echo -n " $RANDO$RANDOM ";done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor x in 'seq 50'; do echo -n " $RANDO$RANDOM ";done[C>;done>;done ;done[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K'seq 0 100'[C[C[1P 100'1 100'[C[C[C[C[C0'[C0'[C0'[C[C[C[C; do echo -n " [K " [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C" ; done
+ eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 'seq 1 100000'; do echo -n " "; done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C; [1Pdone[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"; done
+ eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 'seq 1 100000'; do echo -n " "; done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor x in 'seq 1 100000'; do echo -n " "; done[K[Aeserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 'seq 1 100000'; do echo -n " "; done[Keserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 'seq 1 100000'; do echo -n " "; done
+ eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 'seq 1 100000'; do echo -n " "; done[C[C[1P
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 'seq 1 100000'; do echo -n ""; done[1@R[1P[1@$[1@R[1@a[1P[1@A[1@N[1@D[1@O[1@M[1@ [C[C[C[C[C[C[C[1@ 
+ 8100 eserdar1@remote07:~/i240b/submit/lab9/exercises$ AS[K[Kascending [K[K[K[K[K[K[K[K[K[Kfor x in se[K[K'seq 1 10' ;[K[K; do ecjo[K[Khp[Ko-n"[K[K[K -n " "[K$Rando[K[K[K[KANDOM"[K " [K; DPE[K[K[Kdone >> as[K[Krandom.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  Makefile  plot.gp  random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedt[Kit random.dat%[K&
+[1] 2550624
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedit random.dat&ls[Kfor x in 'seq 1 10'; do echo -n " $RANDOM "; done >> random.dat^C
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedit random.dat&ls[Kfor x in 'seq 1 10'; do echo -n " $RANDOM "; done >> random.dat[1P[1P[1@2[1@0[1P[1P[1P[1P[1@2[1@0
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedit random.dat&
+[2] 2551290
+[1]   Done                    gedit random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in `seq 100 -20 0`; do echo $x; done
+100
+80
+60
+40
+20
+0
+[2]+  Done                    gedit random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ `[Kls
+2-sorts  3-stats  4-time  Makefile  plot.gp  random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in `seq 50` [K; do echo -n " R[K4[K$Ra[KADN[K[KNDOM " [K; DONE
+> ^C
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in `seq 50`; do echo -n " $RANDOM "; DONE[K[K[K[Kdone
+ 24536  6444  6712  29876  25688  2047  13771  18220  17118  5397  17616  19153  31383  24123  3229  20049  14283  3589  27761  1112  17097  19676  9163  3908  20516  4404  2521  16996  16768  15726  4573  18847  9126  4595  29865  5269  106  18833  28094  23628  1794  20954  25872  9  31986  7370  7220  15342  17436  13464 eserdar1@remote07:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  Makefile  plot.gp  random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ rm random.dot[K[Kat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  Makefile  plot.gp
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 'seq 10[K[K5'; do echo -n " $RANDOM "; DONE[K[K[Kd[K[Kdone
+ 28207 eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 'seq 5'; do echo -n " $RANDOM "; done[Kfor x in 'seq 5'; do echo -n " $RANDOM "; done[C[C[1P[1@1[C[1P[1@`[1P[1@`
+ 2798  18398  16462  29733  26157 eserdar1@remote07:~/i240b/submit/lab9/exercises$ 
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in `seq 5`; do echo -n " $RANDOM "; done
+ 18199  19816  30255  14654  17374 eserdar1@remote07:~/i240b/submit/lab9/exercises$ 
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in `seq 5`; do echo -n " $RANDOM "; done[C[1P[1@1[1@0[1@0[1@0[1@0[1@0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C >> random.dat [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kt
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  Makefile  plot.gp  random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedit random.dat&
+[1] 2551987
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ g[Kgedit random.dat&
+[2] 2552243
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ 
+(gedit:2551987): GLib-GObject-[1;33mWARNING[0m **: [34m17:51:06.253[0m: invalid unclassed pointer in cast to 'GeditOpenDocumentSelector'
+
+(gedit:2551987): Gtk-[1;35mCRITICAL[0m **: [34m17:51:06.253[0m: gtk_list_store_clear: assertion 'GTK_IS_LIST_STORE (list_store)' failed
+
+(gedit:2551987): Gtk-[1;35mCRITICAL[0m **: [34m17:51:06.253[0m: gtk_widget_set_visible: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(gedit:2551987): Gtk-[1;35mCRITICAL[0m **: [34m17:51:06.253[0m: gtk_widget_set_visible: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(gedit:2551987): GLib-GObject-[1;33mWARNING[0m **: [34m17:51:06.253[0m: invalid unclassed pointer in cast to 'GeditOpenDocumentSelector'
+
+(gedit:2551987): Gtk-[1;35mCRITICAL[0m **: [34m17:51:06.253[0m: gtk_list_store_clear: assertion 'GTK_IS_LIST_STORE (list_store)' failed
+
+(gedit:2551987): Gtk-[1;35mCRITICAL[0m **: [34m17:51:06.253[0m: gtk_widget_set_visible: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(gedit:2551987): Gtk-[1;35mCRITICAL[0m **: [34m17:51:06.253[0m: gtk_widget_set_visible: assertion 'GTK_IS_WIDGET (widget)' failed
+^C
+[2]+  Done                    gedit random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  Makefile  plot.gp  random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ lsgedit random.dat&ls[Kfor x in `seq 100000`; do echo -n " $RANDOM "; done >> random.dat [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfor x in `seq 5`; do echo -n " $RANDOM "; done'seq 5'[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Krm random.datls[Kfor x in 'seq 5'; do echo -n " $RANDOM "; donels[Krm random.dat[K[K[K[K[K[K[K[K[K[K[K[K[Kls
+2-sorts  3-stats  4-time  Makefile  plot.gp  random.dat
+[1]+  Done                    gedit random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ lsgedit random.dat&ls[K[Kfor x in `seq 5`; do echo -n " $RANDOM "; done[C[C[1P[1@1[1@ [1@1[1@ [1@1[1@0[1@0[1@0[1@0[1@0[1@.[1P[C[C[C[C[1P[1P[1P[C[1P
+ 28278  5499  21120  2557  31595  22610  3457  13426  12283  4653 eserdar1@remote07:~/i240b/submit/lab9/exercises$ 
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in `seq 1 1 10`; do echo -n " $RANDOM "; done[C[1@0[1@0[1@0[1@0[1@.[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C >> [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1@$[1@x[1P[1P[1P[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in `seq 1 1 10`; do echo $x; done [C[1@0[C[1@0[C[1@0[C[1@0[1@.[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C > > [C a s c e n d i n g . d o t [1P [1P a t 
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in 'seq 10 -1 1`[C[1P[1@`[C[C[C[C[C[C[C[C[C[C[C[C; do echo $x [K; done
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in `seq 10 -1 1`; do echo $x; done[1@0[1@0[1@0[1@0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C >> descending.datd[K
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedit ascendint[Kg.dat&
+[1] 2554816
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedit descending.dat&
+(gedit:2554816): GLib-GObject-[1;33mWARNING[0m **: [34m18:05:07.841[0m: invalid unclassed pointer in cast to 'GeditOpenDocumentSelector'
+
+(gedit:2554816): Gtk-[1;35mCRITICAL[0m **: [34m18:05:07.841[0m: gtk_list_store_clear: assertion 'GTK_IS_LIST_STORE (list_store)' failed
+
+(gedit:2554816): Gtk-[1;35mCRITICAL[0m **: [34m18:05:07.841[0m: gtk_widget_set_visible: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(gedit:2554816): Gtk-[1;35mCRITICAL[0m **: [34m18:05:07.841[0m: gtk_widget_set_visible: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(gedit:2554816): GLib-GObject-[1;33mWARNING[0m **: [34m18:05:07.841[0m: invalid unclassed pointer in cast to 'GeditOpenDocumentSelector'
+
+(gedit:2554816): Gtk-[1;35mCRITICAL[0m **: [34m18:05:07.841[0m: gtk_list_store_clear: assertion 'GTK_IS_LIST_STORE (list_store)' failed
+
+(gedit:2554816): Gtk-[1;35mCRITICAL[0m **: [34m18:05:07.841[0m: gtk_widget_set_visible: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(gedit:2554816): Gtk-[1;35mCRITICAL[0m **: [34m18:05:07.841[0m: gtk_widget_set_visible: assertion 'GTK_IS_WIDGET (widget)' failed
+^C
+[1]+  Done                    gedit ascending.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedit ascending.dat&for x in `seq 100000 -1 1`; do echo $x; done >> descending.dat[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit ascending.dat&[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Krm ascending.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ rm desending.dat
+rm: cannot remove 'desending.dat': No such file or directory
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ rm desending.datcending.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ rm descending.dat[1Pending.datascending.datgedit ascending.dat&for x in `seq 100000 -1 1`; do echo $x; done >> descending.dat[1@"[1@ [C[C ; done >> descending.dat [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"; done >> descending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -1 1`; do echo " $x "; done >> descending.dat [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+ 10 
+ 9 
+ 8 
+ 7 
+ 6 
+ 5 
+ 4 
+ 3 
+ 2 
+ 1 
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in `seq 10 -1 1`; do echo " $x "; done [Kfor x in `seq 10 -1 1`; do echo " $x "; done [C[C[C[C[C[C[C[1@ [1P[C[C[1@ [1@-[1@n
+ 10  9  8  7  6  5  4  3  2  1 eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in `seq 10 -1 1`; do echo -n " $x "; done [C[1@0[1@0[1@0[1@0[Kfor x in `seq 100000 -1 1`; do echo -n " $x "; done [C<<[K[K>> descending [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor x in `seq 100000 -1 1`; do echo -n " $x "; done >> descending [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.gdgagtg[1Pg[1Pg[1Pg[C[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cg .dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ do [K[K[Kfor x in `sew[Kq 1 1 101[K` [K; do e[Kecho -n " $x " [K; done 
+ 1  2  3  4  5  6  7  8  9  10 eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in `seq 1 1 10`; do echo -n " $x "; done [C[C[C[C[C[C[1@0[C[1@0[C[1@0[C[1@0[Kfor x in `seq 1 1 100000`; do echo -n " $x "; done  [K>> ascending [K.d at[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ for x in `seq 1 1 10`; do echo -n " $x "; done [C[1@0[C[1@0[C[1@0[C[1@0[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C > > [C a s c e n d i n g .  [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd a t 
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  ascending.dat  descending.dat  Makefile  plot.gp  random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedit ascending.dat [K%[K&
+[1] 2555665
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedit descending.dat [K&
+[2] 2555680
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ de [K[K[Kcd 2-sorts/
+[1]-  Done                    gedit ascending.dat  (wd: ~/i240b/submit/lab9/exercises)
+(wd now: ~/i240b/submit/lab9/exercises/2-sorts)
+[2]+  Done                    gedit descending.dat  (wd: ~/i240b/submit/lab9/exercises)
+(wd now: ~/i240b/submit/lab9/exercises/2-sorts)
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ ls
+main.cc  sorts.cc  sorts.hh
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ ./ [Ka[Kmain
+bash: ./main: No such file or directory
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ ls
+main.cc  sorts.cc  sorts.hh
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ gcc main. [Kc -0[Ko man[Kin
+[01m[Kgcc:[m[K [01;31m[Kerror: [m[Kmain.c: No such file or directory
+[01m[Kgcc:[m[K [01;31m[Kfatal error: [m[Kno input files
+compilation terminated.
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ -f ../Makefile
+bash: -f: command not found
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ ls
+main.cc  sorts.cc  sorts.hh
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ make [3Plsmake -f ../Makefile
+g++ -MT sorts.o -MMD -MP -MF .deps/sorts.d -g -Wall -std=c++17 -c sorts.cc
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ ./main
+usage: ./main [-v] ALGORITHM INTS_DATA_FILE|- [N...]
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ seq 100 -8-[K 0 | ./main -v insertionSort -
+4 12 20 28 36 44 52 60 68 76 84 92 100 
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ echo "[K$RANDOM $Rand[K[K[Ka[KANDOM $RANDOM $RANDOM \ | ./MAIN -V MERGEs [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[Kmain -v mergeS ort
+terminate called after throwing an instance of 'std::logic_error'
+  what():  basic_string::_M_construct null not valid
+Aborted
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ echo $RANDOM $RANDOM $RANDOM $RANDOM \ | ./main -v mergeSort -
+2629 15728 16271 24543 
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ seq 100 -t[K4 0 | ./main -v selectionSort - 4 7
+88 92 96 100 
+60 64 68 72 76 80 84 
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ seq 100 -4 0 | ./main -v buu[KbbleSort - 4 7
+88 92 96 100 
+60 64 68 72 76 80 84 
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ seq 100 =40[K[K[K-4 0 | ./main bubble [KSort - 4 7
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ alg0="insertionSort bubbleSort selectionSort"
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ alg1='[K"mergeSort quickSort"
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ for a in $alg0 $alg1; do \ echo "***$a"; \ time ./main $a [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ca  ../random/da[K[K.d[K[K[K.dat 10000; \ done 
+> *** insertionSort
+> ^C
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ for a in $alg0 $alg1; do \ echo "***$a"; \ time ./main $a ../random.dat 10000; \ done ; *** insertionSort[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Pt[1Pt[1Pt[1Pt[1Pt[1Pt[K[1Pt[1Pt[1Pt[1Pt[C[K[K[K[K[K[K[K[K[K[1P
+> ^C
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ for a in $alg0 $alg1; do \ echo "***$a"; \ time ./main $a../random.dat 10000; \ done[C ../random.dat 10000; \ done ; *** insertionSort[A[C[C[C[C[C[C[C[C[C[31Palg1="mergeSort quickSort"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor a in $alg0 $alg1; do \ echo "***$a"; \ time ./main $a ../random.dat 10000; \ done ; *** insertionSort[A[C[C[C[C[C[C[C[C[C[31Palg1="mergeSort quickSort"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfor a in $alg0 $alg1; do \
+> echo "*** $a"; \
+> time ./main $a ../random.dat 10000; \
+> done
+*** insertionSort
+
+real	0m0.221s
+user	0m0.219s
+sys	0m0.000s
+*** bubbleSort
+
+real	0m0.446s
+user	0m0.440s
+sys	0m0.004s
+*** selectionSort
+
+real	0m0.184s
+user	0m0.174s
+sys	0m0.008s
+*** mergeSort
+
+real	0m0.007s
+user	0m0.006s
+sys	0m0.000s
+*** quickSort
+
+real	0m0.006s
+user	0m0.003s
+sys	0m0.003s
+eserdar1@remote07:~/i240b/submit/lab9/exercises/2-sorts$ cd ..
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  ascending.dat  descending.dat  Makefile  plot.gp  random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ cd 3-stats/
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ls
+main.cc  ops.cc  ops.hh  sorts.cc  sorts.hh
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ gedit newclass.gg[K[Khh&
+[1] 2560039
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ gedit ops.gg[K[Khh&
+[2] 2560078
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ GED[K[K[Kgedit newcla[K[K[K[K[K[K[K[K[K[K[K[Kls
+main.cc  newclass.hh  ops.cc  ops.hh  sorts.cc	sorts.hh
+[2]+  Done                    gedit ops.hh
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ gedit newclass.cc&
+[2] 2562037
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ gedit ops.cc&
+[3] 2562227
+[2]   Done                    gedit newclass.cc
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ gedit main.c&
+[4] 2562711
+[3]   Done                    gedit ops.cc
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ gedit main.cc&
+[5] 2562784
+[4]   Done                    gedit main.c
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ./main quickSort ../random.dat `seq 10000 10000 100000`
+bash: ./main: No such file or directory
+[5]+  Done                    gedit main.cc
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ./main quickSort ../random.dat `seq 10000 10000 100000`gedit main.cc&[K[1P&ops.cc&newclass.cc&ls[Kgedit ops.hh&newclass.hh&ls[Kcd 3-stats/ls[Kcd ..for a in $alg0 $alg1; do echo "*** $a"; time ./main $a ../random.dat 10000; done[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C\ echo "***$a"; \ time ./main $a.[4@./random.dat 10000; \[C[C[C[C[C ../random.dat 10000; \ done ; *** insertionSort[A[C[C[C[C[C[C[C[C[C[31Palg1="mergeSort quickSort"
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C0="insertionSort bubbleSort selectionSort"[7Pseq 100 -4 0 | ./main bubbleSort - 4 7[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmake -f ../Makefile 
+g++ -MT sorts.o -MMD -MP -MF .deps/sorts.d -g -Wall -std=c++17 -c sorts.cc
+g++ -MT newclass.o -MMD -MP -MF .deps/newclass.d -g -Wall -std=c++17 -c newclass.cc
+In file included from [01m[Knewclass.cc:1[m[K:
+[01m[Knewclass.hh:5:1:[m[K [01;31m[Kerror: [m[Kexpected class-name before ‘[01m[K{[m[K’ token
+ [01;31m[K{[m[K
+ [01;31m[K^[m[K
+[01m[Knewclass.cc:[m[K In member function ‘[01m[Kvirtual int Newclass::compare(int, int)[m[K’:
+[01m[Knewclass.cc:7:22:[m[K [01;31m[Kerror: [m[K‘[01m[KOps[m[K’ is not a base of ‘[01m[KNewclass[m[K’
+  return ( this->Ops::[01;31m[Kcompare[m[K(a.b)   );
+                      [01;31m[K^~~~~~~[m[K
+[01m[Knewclass.cc:7:32:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kb[m[K’ in ‘[01m[Ka[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  return ( this->Ops::compare(a.[01;31m[Kb[m[K)   );
+                                [01;31m[K^[m[K
+[01m[Knewclass.cc:[m[K At global scope:
+[01m[Knewclass.cc:11:16:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kswap[m[K’ declared void
+ Newclass::swap([01;31m[Kinta[m[K[], int i, int j){
+                [01;31m[K^~~~[m[K
+[01m[Knewclass.cc:11:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kinta[m[K’ was not declared in this scope
+[01m[Knewclass.cc:11:16:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kint[m[K’
+ Newclass::swap([01;36m[Kinta[m[K[], int i, int j){
+                [01;36m[K^~~~[m[K
+                [32m[Kint[m[K
+[01m[Knewclass.cc:11:21:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K][m[K’ token
+ Newclass::swap(inta[[01;31m[K][m[K, int i, int j){
+                     [01;31m[K^[m[K
+[01m[Knewclass.cc:11:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+ Newclass::swap(inta[], [01;31m[Kint[m[K i, int j){
+                        [01;31m[K^~~[m[K
+[01m[Knewclass.cc:11:31:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+ Newclass::swap(inta[], int i, [01;31m[Kint[m[K j){
+                               [01;31m[K^~~[m[K
+make: *** [../Makefile:48: newclass.o] Error 1
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile 
+g++ -MT newclass.o -MMD -MP -MF .deps/newclass.d -g -Wall -std=c++17 -c newclass.cc
+[01m[Knewclass.cc:[m[K In member function ‘[01m[Kvirtual int Newclass::compare(int, int)[m[K’:
+[01m[Knewclass.cc:7:32:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kb[m[K’ in ‘[01m[Ka[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  return ( this->Ops::compare(a.[01;31m[Kb[m[K)   );
+                                [01;31m[K^[m[K
+[01m[Knewclass.cc:[m[K At global scope:
+[01m[Knewclass.cc:11:16:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kswap[m[K’ declared void
+ Newclass::swap([01;31m[Kinta[m[K[], int i, int j){
+                [01;31m[K^~~~[m[K
+[01m[Knewclass.cc:11:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kinta[m[K’ was not declared in this scope
+[01m[Knewclass.cc:11:16:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kint[m[K’
+ Newclass::swap([01;36m[Kinta[m[K[], int i, int j){
+                [01;36m[K^~~~[m[K
+                [32m[Kint[m[K
+[01m[Knewclass.cc:11:21:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K][m[K’ token
+ Newclass::swap(inta[[01;31m[K][m[K, int i, int j){
+                     [01;31m[K^[m[K
+[01m[Knewclass.cc:11:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+ Newclass::swap(inta[], [01;31m[Kint[m[K i, int j){
+                        [01;31m[K^~~[m[K
+[01m[Knewclass.cc:11:31:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+ Newclass::swap(inta[], int i, [01;31m[Kint[m[K j){
+                               [01;31m[K^~~[m[K
+make: *** [../Makefile:48: newclass.o] Error 1
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile 
+g++ -MT newclass.o -MMD -MP -MF .deps/newclass.d -g -Wall -std=c++17 -c newclass.cc
+[01m[Knewclass.cc:[m[K In member function ‘[01m[Kvirtual int Newclass::compare(int, int)[m[K’:
+[01m[Knewclass.cc:7:32:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kb[m[K’ in ‘[01m[Ka[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+  return ( this->Ops::compare(a.[01;31m[Kb[m[K)   );
+                                [01;31m[K^[m[K
+[01m[Knewclass.cc:[m[K At global scope:
+[01m[Knewclass.cc:11:16:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kswap[m[K’ declared void
+ Newclass::swap([01;31m[Kinta[m[K[], int i, int j){
+                [01;31m[K^~~~[m[K
+[01m[Knewclass.cc:11:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kinta[m[K’ was not declared in this scope
+[01m[Knewclass.cc:11:16:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kint[m[K’
+ Newclass::swap([01;36m[Kinta[m[K[], int i, int j){
+                [01;36m[K^~~~[m[K
+                [32m[Kint[m[K
+[01m[Knewclass.cc:11:21:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K][m[K’ token
+ Newclass::swap(inta[[01;31m[K][m[K, int i, int j){
+                     [01;31m[K^[m[K
+[01m[Knewclass.cc:11:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+ Newclass::swap(inta[], [01;31m[Kint[m[K i, int j){
+                        [01;31m[K^~~[m[K
+[01m[Knewclass.cc:11:31:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+ Newclass::swap(inta[], int i, [01;31m[Kint[m[K j){
+                               [01;31m[K^~~[m[K
+make: *** [../Makefile:48: newclass.o] Error 1
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile 
+g++ -MT newclass.o -MMD -MP -MF .deps/newclass.d -g -Wall -std=c++17 -c newclass.cc
+[01m[Knewclass.cc:11:16:[m[K [01;31m[Kerror: [m[Kvariable or field ‘[01m[Kswap[m[K’ declared void
+ Newclass::swap([01;31m[Kinta[m[K[], int i, int j){
+                [01;31m[K^~~~[m[K
+[01m[Knewclass.cc:11:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kinta[m[K’ was not declared in this scope
+[01m[Knewclass.cc:11:16:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kint[m[K’
+ Newclass::swap([01;36m[Kinta[m[K[], int i, int j){
+                [01;36m[K^~~~[m[K
+                [32m[Kint[m[K
+[01m[Knewclass.cc:11:21:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K][m[K’ token
+ Newclass::swap(inta[[01;31m[K][m[K, int i, int j){
+                     [01;31m[K^[m[K
+[01m[Knewclass.cc:11:24:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+ Newclass::swap(inta[], [01;31m[Kint[m[K i, int j){
+                        [01;31m[K^~~[m[K
+[01m[Knewclass.cc:11:31:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kint[m[K’
+ Newclass::swap(inta[], int i, [01;31m[Kint[m[K j){
+                               [01;31m[K^~~[m[K
+make: *** [../Makefile:48: newclass.o] Error 1
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile 
+g++ -MT newclass.o -MMD -MP -MF .deps/newclass.d -g -Wall -std=c++17 -c newclass.cc
+g++ -MT ops.o -MMD -MP -MF .deps/ops.d -g -Wall -std=c++17 -c ops.cc
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:81:26:[m[K [01;31m[Kerror: [m[K‘[01m[KNewclass[m[K’ has not been declared
+ outArray(int a[], int n, [01;31m[KNewclass[m[K* x)
+                          [01;31m[K^~~~~~~~[m[K
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid outArray(int*, int, int*)[m[K’:
+[01m[Kmain.cc:83:31:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kcmp_count[m[K’ in ‘[01m[K* x[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   std::cout<<n<<"      "<< x->[01;31m[Kcmp_count[m[K<<"      "<< x->swp_count;
+                               [01;31m[K^~~~~~~~~[m[K
+[01m[Kmain.cc:83:56:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kswp_count[m[K’ in ‘[01m[K* x[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   std::cout<<n<<"      "<< x->cmp_count<<"      "<< x->[01;31m[Kswp_count[m[K;
+                                                        [01;31m[K^~~~~~~~~[m[K
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid go(SortP, std::__cxx11::string, bool, int)[m[K’:
+[01m[Kmain.cc:93:3:[m[K [01;31m[Kerror: [m[K‘[01m[KNewclass[m[K’ was not declared in this scope
+   [01;31m[KNewclass[m[K  x;
+   [01;31m[K^~~~~~~~[m[K
+[01m[Kmain.cc:93:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kclass[m[K’
+   [01;36m[KNewclass[m[K  x;
+   [01;36m[K^~~~~~~~[m[K
+   [32m[Kclass[m[K
+[01m[Kmain.cc:94:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+   sort(a, n, &[01;31m[Kx[m[K);
+               [01;31m[K^[m[K
+[01m[Kmain.cc:[m[K At global scope:
+[01m[Kmain.cc:81:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid outArray(int*, int, int*)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KoutArray[m[K(int a[], int n, Newclass* x)
+ [01;35m[K^~~~~~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile 
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o newclass.o ops.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o newclass.o ops.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K ./main quickSort ../random.dat `seq 10000 10000 100000`
+n      compares      swaps
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ cd ..
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  ascending.dat  descending.dat  Makefile  plot.gp  random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedt[Kit random.dat&
+[2] 2564474
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedit ascending.dat 
+[2]+  Done                    gedit random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedit descending.dat 
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ cd 3-stats/
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ls
+main  main.cc  main.o  newclass.cc  newclass.hh  newclass.o  ops.cc  ops.hh  ops.o  sorts.cc  sorts.hh	sorts.o
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main insertionSort ../descending.dat `seq 2000 2000 10000`
+n      compares      swaps
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main insertionSort ../descending.dat `seq 2000 2000 10000`[K
+> ^C
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main insertionSort ../descending.dat `seq 2000 2000 10000'[K`
+n      compares      swaps
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main insertionSort ../descending.dat `seq 2000 2000 10000`[K`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd 3-stats/gedit descending.dat [1Pa[C[C[C[C[C[C[C[C[C[C[C[C[C[3Prandom.dat&ls[Kcd .. ./main quickSort ../random.dat `seq 10000 10000 100000`[36Pmake -f ../Makefile 
+g++ -MT newclass.o -MMD -MP -MF .deps/newclass.d -g -Wall -std=c++17 -c newclass.cc
+In file included from [01m[Knewclass.cc:1[m[K:
+[01m[Knewclass.hh:9:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kint[m[K’
+  [01;31m[Kint[m[K swp_count = 0;
+  [01;31m[K^~~[m[K
+[01m[Knewclass.cc:[m[K In member function ‘[01m[Kvirtual void Newclass::swap(int*, int, int)[m[K’:
+[01m[Knewclass.cc:12:2:[m[K [01;31m[Kerror: [m[K‘[01m[Kswp_count[m[K’ was not declared in this scope
+  [01;31m[Kswp_count[m[K+=1;
+  [01;31m[K^~~~~~~~~[m[K
+[01m[Knewclass.cc:12:2:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kcmp_count[m[K’
+  [01;36m[Kswp_count[m[K+=1;
+  [01;36m[K^~~~~~~~~[m[K
+  [32m[Kcmp_count[m[K
+make: *** [../Makefile:48: newclass.o] Error 1
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile 
+g++ -MT newclass.o -MMD -MP -MF .deps/newclass.d -g -Wall -std=c++17 -c newclass.cc
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o newclass.o ops.o main.o -o main
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile  ./main insertionSort ../descending.dat `seq 2000 2000 10000`[K`
+n      compares      swaps
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`
+n      compares      swaps
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ gedt[Kit [K[K[K[K[K[Kcd ..
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ s[Kls
+2-sorts  3-stats  4-time  ascending.dat  descending.dat  Makefile  plot.gp  random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedit ascenting.d[K[K[K[K[K[Kdingd[K.dat [K&
+[2] 2568278
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedit descending.dat&
+[3] 2568299
+[2]   Done                    gedit ascending.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ gedit random.dat&
+[4] 2568321
+[3]   Done                    gedit descending.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ make -f ../Makefile
+make: ../Makefile: No such file or directory
+make: *** No rule to make target '../Makefile'.  Stop.
+[4]+  Done                    gedit random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  ascending.dat  descending.dat  Makefile  plot.gp  random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ cd 3-stats/
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f [K /[K../Makefile
+make: Nothing to be done for 'all'.
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ^C
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make: Nothing to be done for 'all'.
+bash: make:: command not found
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make: Nothing to be done for 'all'.[16P -f ../Makefile[8Pcd 3-stats/make -f ../Makefile
+make: Nothing to be done for 'all'.
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make clean
+make: *** No rule to make target 'clean'.  Stop.
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make clean-f ../Makefile: Nothing to be done for 'all'.[16P -f ../Makefile
+make: Nothing to be done for 'all'.
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ^C[Kmake: *** No rule to make target 'clean'.  Stop.^C
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ld
+ld: no input files
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ls
+main  main.cc  main.o  newclass.cc  newclass.hh  newclass.o  ops.cc  ops.hh  ops.o  sorts.cc  sorts.hh	sorts.o
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make clean -f ../Makefile
+rm -rf *.o *~ main .deps .gitignore
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../MA[Kakefile
+g++ -MT sorts.o -MMD -MP -MF .deps/sorts.d -g -Wall -std=c++17 -c sorts.cc
+g++ -MT newclass.o -MMD -MP -MF .deps/newclass.d -g -Wall -std=c++17 -c newclass.cc
+g++ -MT ops.o -MMD -MP -MF .deps/ops.d -g -Wall -std=c++17 -c ops.cc
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o newclass.o ops.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o newclass.o ops.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`
+n      compares      swaps
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`
+n      compares      swaps
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`[37Pmake -f ../Makefile[6@clean [C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kdmake -f ../Makefile[9Pclean-f ../Makefile: Nothing to be done for 'all'.[16P -f ../Makefile[8Pcd 3-stats/ls[Kmake -f ../Makefile[2Pgedit random.dat&descending.dat&[1Pascending.dat&ls[Kcd .. ./main quickSort ../random.dat `seq 10000 10000 100000`insertionSort ../descending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1PquickSort ../random.dat `seq 10000 10000 100000`
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CinsertionSort ../descending.dat `seq 2000 2000 10000`
+n      compares      swaps
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ gedit x.dat&
+[2] 2569403
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ gedit x.dat& ./main insertionSort ../descending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdescending.dat `seq 2000 2000 1000[C[1P`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdescending.dat `seq 2000 2000 10000[1P`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdescending.dat `seq 2000 2000 10000`[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C.dat `seq 2000 2000 10000` [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1@x
+n      compares      swaps
+[2]+  Done                    gedit x.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ x[K ./main insertionSort x.dat `seq 2000 2000 10000`
+n      compares      swaps
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ls
+main	 main.o       newclass.hh  ops.cc  ops.o     sorts.hh  x.dat
+main.cc  newclass.cc  newclass.o   ops.hh  sorts.cc  sorts.o
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ rm x.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ [Keserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ [Keserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ./main quickSort ../random.dat `seq 10000 10000 100000`
+n      compares      swaps
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make m[Kf[K-f //[K[K../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o newclass.o ops.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o newclass.o ops.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile./main quickSort ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Crm x.dat[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K ./main insertionSort x.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgedit x.dat&[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ./main insertionSort ../descending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CquickSort ../random.dat `seq 10000 10000 [5P100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CinsertionSort ../descending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CquickSort ../random.dat `seq 10000 10000 [5P100000`[K[Aeserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`
+n      compares      swaps
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ cd ~/cs[K[K[Kc[K/cs24-[K0
+eserdar1@remote07:~/cs240$ ls
+announce.html  announce.umt  assets  bin  docs	exams-quizzes  exercises  hws  index.html  index.umt  labs  misc  online  projects  README.md  slides  umt.make
+eserdar1@remote07:~/cs240$ cd labs/
+eserdar1@remote07:~/cs240/labs$ cd lab9
+eserdar1@remote07:~/cs240/labs/lab9$ ls
+exercises  lab9  lab9.html  lab9.pdf  lab9.umt
+eserdar1@remote07:~/cs240/labs/lab9$ cd exercises/
+eserdar1@remote07:~/cs240/labs/lab9/exercises$ ls
+2-sorts  3-stats  4-time  Makefile  plot.gp
+eserdar1@remote07:~/cs240/labs/lab9/exercises$ cd 3-stats/
+eserdar1@remote07:~/cs240/labs/lab9/exercises/3-stats$ ls
+main.cc  ops.cc  ops.hh  sorts.cc  sorts.hh
+eserdar1@remote07:~/cs240/labs/lab9/exercises/3-stats$ gei[Kdit main.ccc[K[Kc*[K&
+[2] 2574208
+eserdar1@remote07:~/cs240/labs/lab9/exercises/3-stats$ cd ~/2[Ko240[K[K[K[Ki240b.[K.[K/submit/lab9
+[2]+  Done                    gedit main.cc  (wd: ~/cs240/labs/lab9/exercises/3-stats)
+(wd now: ~/i240b/submit/lab9)
+eserdar1@remote07:~/i240b/submit/lab9$ ls
+exercises  lab9.LOG
+eserdar1@remote07:~/i240b/submit/lab9$ cd exercises/
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  ascending.dat  descending.dat  Makefile  plot.gp  random.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises$ cd 3-stats/
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ls
+main  main.cc  main.o  newclass.cc  newclass.hh  newclass.o  ops.cc  ops.hh  ops.o  sorts.cc  sorts.hh	sorts.o
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ lscd 3-stats/ls[Kcd exercises/ls[Kcd ~/i240b/submit/lab9[8Pgedit main.cc&ls[Kcd 3-stats/ls[Kcd exercises/ls[Kcd lab9s/ls[Kcd ~/cs240[K[K[K[K[K[K[K[K[K[Kmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:81:26:[m[K [01;31m[Kerror: [m[K‘[01m[KNewclass[m[K’ has not been declared
+ outArray(int a[], int n, [01;31m[KNewclass[m[K* nw)
+                          [01;31m[K^~~~~~~~[m[K
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid outArray(int*, int, int*)[m[K’:
+[01m[Kmain.cc:83:31:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kcmp_count[m[K’ in ‘[01m[K* nw[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   std::cout<<n<<"     "<< nw->[01;31m[Kcmp_count[m[K<<"     "<< nw->swp_count;
+                               [01;31m[K^~~~~~~~~[m[K
+[01m[Kmain.cc:83:56:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kswp_count[m[K’ in ‘[01m[K* nw[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+   std::cout<<n<<"     "<< nw->cmp_count<<"     "<< nw->[01;31m[Kswp_count[m[K;
+                                                        [01;31m[K^~~~~~~~~[m[K
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid go(SortP, std::__cxx11::string, bool, int)[m[K’:
+[01m[Kmain.cc:96:3:[m[K [01;31m[Kerror: [m[K‘[01m[KNewclass[m[K’ was not declared in this scope
+   [01;31m[KNewclass[m[K x;
+   [01;31m[K^~~~~~~~[m[K
+[01m[Kmain.cc:96:3:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kclass[m[K’
+   [01;36m[KNewclass[m[K x;
+   [01;36m[K^~~~~~~~[m[K
+   [32m[Kclass[m[K
+[01m[Kmain.cc:97:15:[m[K [01;31m[Kerror: [m[K‘[01m[Kx[m[K’ was not declared in this scope
+   sort(a, n, &[01;31m[Kx[m[K);
+               [01;31m[K^[m[K
+[01m[Kmain.cc:[m[K At global scope:
+[01m[Kmain.cc:81:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid outArray(int*, int, int*)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KoutArray[m[K(int a[], int n, Newclass* nw)
+ [01;35m[K^~~~~~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o newclass.o ops.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o newclass.o ops.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`
+n     compares     swaps
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`[37Pmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o newclass.o ops.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o newclass.o ops.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile ./main quickSort ../random.dat `seq 10000 10000 100000`
+n     compares     swaps
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`[37Pmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o newclass.o ops.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o newclass.o ops.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile ./main quickSort ../random.dat `seq 10000 10000 100000`[37Pmake -f ../Makefile ./main quickSort ../random.dat `seq 10000 10000 100000`
+n     compares     swaps
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`[37Pmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o newclass.o ops.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o newclass.o ops.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile ./main quickSort ../random.dat `seq 10000 10000 100000`
+n     compares     swaps
+else
+else
+else
+else
+else
+else
+else
+else
+else
+else
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`[37Pmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o newclass.o ops.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o newclass.o ops.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile ./main quickSort ../random.dat `seq 10000 10000 100000`
+n     compares     swaps
+else
+else
+else
+else
+else
+else
+else
+else
+else
+else
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`[37Pmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o newclass.o ops.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o newclass.o ops.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile ./main quickSort ../random.dat `seq 10000 10000 100000`
+n     compares     swaps
+go
+else
+go
+else
+go
+else
+go
+else
+go
+else
+go
+else
+go
+else
+go
+else
+go
+else
+go
+else
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`[1P[1P[1P
+n     compares     swaps
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  cannot read random.dat: No such file or directory
+Aborted
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort random.dat `seq 10000 10000 100000`[3@../[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+n     compares     swaps
+go
+else
+go
+else
+go
+else
+go
+else
+go
+else
+go
+else
+go
+else
+go
+else
+go
+else
+go
+else
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@../[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[3@../[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[37Pmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o newclass.o ops.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o newclass.o ops.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile ./main quickSort ../random.dat `seq 10000 10000 100000`
+n     compares     swaps
+10000     210317     38296
+else
+20000     462188     81061
+else
+30000     704729     126311
+else
+40000     968879     173161
+else
+50000     1328586     215827
+else
+60000     1566885     267388
+else
+70000     1831495     317793
+else
+80000     2157810     367012
+else
+90000     2379461     420276
+else
+100000     2739638     467756
+else
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`[37Pmake -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ sorts.o newclass.o ops.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main sorts.o newclass.o ops.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ make -f ../Makefile ./main quickSort ../random.dat `seq 10000 10000 100000`
+n     compares     swaps
+10000     210317     38296
+20000     462188     81061
+30000     704729     126311
+40000     968879     173161
+50000     1328586     215827
+60000     1566885     267388
+70000     1831495     317793
+80000     2157810     367012
+90000     2379461     420276
+100000     2739638     467756
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$  ./main quickSort ../random.dat `seq 10000 10000 100000`[C[C[C[1@ [1@-[1@v
+n     compares     swaps
+10000     210317     38296
+20000     462188     81061
+30000     704729     126311
+40000     968879     173161
+50000     1328586     215827
+60000     1566885     267388
+70000     1831495     317793
+80000     2157810     367012
+90000     2379461     420276
+100000     2739638     467756
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ for f in `seq 100000`; do echo $f; done > ../ascending.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ./main insertionSort ../descending.dat `seq 2000 2000 10000`[1@ [1P[C[C[1@ [1@-[1@v[C[1@ 
+n     compares     swaps
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  cannot read -v: No such file or directory
+Aborted
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ./main insertionSort -v  ../descending.dat `seq 2000 2000 10000`[1P[1P[1P[1P[C[C[C[C[1@ [1@-[1@v[C[1@ [1P[1P[1P[1P[C[1@ [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K./main insertionSort ../descending.dat `seq 2000 2000 10000`
+n     compares     swaps
+2000     1999000     1999000
+4000     7998000     7998000
+6000     17997000     17997000
+8000     31996000     31996000
+10000     49995000     49995000
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ./main insertionSort ../descending.dat `seq 2000 2000 10000`[C[1@ [1@-[1@v[C[1@ 
+n     compares     swaps
+2000     1999000     1999000
+4000     7998000     7998000
+6000     17997000     17997000
+8000     31996000     31996000
+10000     49995000     49995000
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ [Keserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ ./main -v  insertionSort ../descending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CinsertionSort ../descending.dat `seq 2000 [4P[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-v  ../descending.dat `seq 2[4@000 [C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor f in `seq 100000`; do echo $f; done > ../asce[6Pnding.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main insertionSort -v  ../descending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C../descending.dat `seq 2000 [4P[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-v  ../descending.dat `seq 2[4@000 [C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C../descending.dat `seq 2000 [4P[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-v  ../descending.dat `seq 2[4@000 [C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor f in `seq 100000`; do echo $f; done > ../asce[6Pnding.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main insertionSort -v  ../descending.dat `seq 2000 2000 10000`[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kfor f in `seq 100000`; do echo $f; done > ../ascending.dat
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ for f in `seq 100000`; do echo $f; done > ../ascending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor f in `seq 100000`; do echo $f; done > ../ascending.dat[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./main -v  insertionSort ../descending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CinsertionSort ../descending.dat `seq 2000 [4P[C[C[C[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-v  insertionSort ../descending.dat `seq 2[4@000 [C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K$ ./main insertionSort ../ascending.dat `seq 2000 2000 10000`
+bash: $: command not found
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ $ ./main insertionSort ../ascending.dat `seq 2000 2000 10000`
+bash: $: command not found
+eserdar1@remote07:~/i240b/submit/lab9/exercises/3-stats$ $ ./main insertionSort ../ascending.dat `seq 2000 2000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C n insertionSort ../ascending.dat `seq 200[1@0[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn insertionSort ../ascending.dat `seq 2000[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C insertionSort ../ascending.dat `seq 200[1@0[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Script started on 2020-04-11 23:21:15-04:00 [TERM="xterm" TTY="/dev/pts/1" COLUMNS="105" LINES="41"]
+eserdar1@remote03:~/i240b/submit/lab9$ cd s[Kexercises/
+eserdar1@remote03:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  ascending.dat  descending.dat  Makefile  plot.gp  random.dat
+eserdar1@remote03:~/i240b/submit/lab9/exercises$ cd4[K 4-time/
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ gedit now&
+[1] 3520162
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ ls
+now.cc	now.hh
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ gedit now.hh&
+[2] 3520253
+[1]   Done                    gedit now
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ gedit now..[Kcc
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ ls
+now.cc	now.hh
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ gedit now.cc&
+[3] 3520422
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ cd ..
+[3]+  Done                    gedit now.cc  (wd: ~/i240b/submit/lab9/exercises/4-time)
+(wd now: ~/i240b/submit/lab9/exercises)
+eserdar1@remote03:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  ascending.dat  descending.dat  Makefile  plot.gp  random.dat
+eserdar1@remote03:~/i240b/submit/lab9/exercises$ cd 2-sorts/
+eserdar1@remote03:~/i240b/submit/lab9/exercises/2-sorts$ ls
+main  main.cc  main.o  sorts.cc  sorts.hh  sorts.o
+eserdar1@remote03:~/i240b/submit/lab9/exercises/2-sorts$ cd[K[Kcd [K[K[Kcd ..
+eserdar1@remote03:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  ascending.dat  descending.dat  Makefile  plot.gp  random.dat
+eserdar1@remote03:~/i240b/submit/lab9/exercises$ cd 4-time/
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ cp -r `?[K/[K[K~/i240b/submit/lab9/2[Kexercises.[K/2-sorts .
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ ls
+2-sorts  now.cc  now.hh
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ cd2[K 2-sorts/
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time/2-sorts$ ls
+main  main.cc  main.o  sorts.cc  sorts.hh  sorts.o
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time/2-sorts$ ls
+main  main.cc  main.o  sorts.cc  sorts.hh  sorts.o
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time/2-sorts$ rm [K[K[Kcd ..
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ ls
+2-sorts  now.cc  now.hh
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ cd [K[K[Ke[Krm 2-sorts/
+rm: cannot remove '2-sorts/': Is a directory
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ rm 2-sorts/[C 2-sorts/- 2-sorts/r 2-sorts/f 2-sorts/[C 2-sorts/
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ ls
+now.cc	now.hh
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ for a in $alg0 $alg1; do ../plot.gp $a.dat > $a.png; done[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kcp -r [K [K[Ki /[K~/i240b/submit/lab9e[K/exercises [K/2-sorts/main
+cp: missing destination file operand after '/home/eserdar1/i240b/submit/lab9/exercises/2-sorts/main'
+Try 'cp --help' for more information.
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ cp -i ~/i240b/submit/lab9/exercises/2-sorts/main[1P ~/i240b/submit/lab9/exercises/2-sorts/main[1P ~/i240b/submit/lab9/exercises/2-sorts/mainr ~/i240b/submit/lab9/exercises/2-sorts/main
+cp: cannot stat 'r': No such file or directory
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ cp r ~/i240b/submit/lab9/exercises/2-sorts/main[C[C[C[1@-
+cp: missing destination file operand after '/home/eserdar1/i240b/submit/lab9/exercises/2-sorts/main'
+Try 'cp --help' for more information.
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ ls
+now.cc	now.hh
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ ls[K[Kcd ..
+eserdar1@remote03:~/i240b/submit/lab9/exercises$ cd 2[K2-sorts/
+eserdar1@remote03:~/i240b/submit/lab9/exercises/2-sorts$ cp main /[K4-times[C.4-times.4-times/4-times[C[C[C[C[C[C[C[K
+eserdar1@remote03:~/i240b/submit/lab9/exercises/2-sorts$ ls
+main  main.cc  main.o  sorts.cc  sorts.hh  sorts.o
+eserdar1@remote03:~/i240b/submit/lab9/exercises/2-sorts$ cd ..
+eserdar1@remote03:~/i240b/submit/lab9/exercises$ cd 4-time/
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ s[Kls
+main  now.cc  now.hh
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ cd ..
+eserdar1@remote03:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  ascending.dat  descending.dat  Makefile  plot.gp  random.dat
+eserdar1@remote03:~/i240b/submit/lab9/exercises$ cd 2-sorts/
+eserdar1@remote03:~/i240b/submit/lab9/exercises/2-sorts$ cd 2-sorts/ls[Kcd ..[3Plscd 4-time/..[K4-time/..[K4-time/..[K[3Plscp main ../4-time[6Pd 2-sorts/p main ../4-time[C[Ke[C[C[C[C[1@.[1P[C. ../4-timec ../4-timec ../4-time
+eserdar1@remote03:~/i240b/submit/lab9/exercises/2-sorts$ cp main.cc ../4-time[C[1P ../4-time[1P ../4-timeo ../4-time
+eserdar1@remote03:~/i240b/submit/lab9/exercises/2-sorts$ cp main.o ../4-time[1@cc[C[C[C[C[C[C[C[C[C[C[C[1P ../4-time[1P ../4-time[1P ../4-time[1P ../4-time[1P ../4-time[1P ../4-time[1P ../4-times ../4-timeo ../4-timer ../4-timet ../4-times ../4-time. ../4-timec ../4-timec ../4-time
+eserdar1@remote03:~/i240b/submit/lab9/exercises/2-sorts$ cp sorts.cc ../4-time[C[1P ../4-time[1P ../4-timeh ../4-timeh ../4-time
+eserdar1@remote03:~/i240b/submit/lab9/exercises/2-sorts$ cp sorts.hh ../4-time[C[C[1P ../4-time[1P ../4-timeo ../4-time
+eserdar1@remote03:~/i240b/submit/lab9/exercises/2-sorts$ cd ..
+eserdar1@remote03:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  ascending.dat  descending.dat  Makefile  plot.gp  random.dat
+eserdar1@remote03:~/i240b/submit/lab9/exercises$ cd 4-time/
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ ls
+main  main.cc  main.o  now.cc  now.hh  sorts.cc  sorts.hh  sorts.o
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ gedit main.cc
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ make  -f [K[K[K[K[K -f ../Makefile
+g++ -MT now.o -MMD -MP -MF .deps/now.d -g -Wall -std=c++17 -c now.cc
+g++ -MT sorts.o -MMD -MP -MF .deps/sorts.d -g -Wall -std=c++17 -c sorts.cc
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:88:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+ [01;31m[K}[m[K
+ [01;31m[K^[m[K
+[01m[Kmain.cc:81:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid outArray(int*, int)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KoutArray[m[K(int a[], int n)
+ [01;35m[K^~~~~~~~[m[K
+[01m[Kmain.cc:65:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid (* getSort(std::__cxx11::string))(int*, int)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KgetSort[m[K(std::string name)
+ [01;35m[K^~~~~~~[m[K
+[01m[Kmain.cc:16:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kstd::vector<int> readIntsFromFile(std::__cxx11::string, int)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KreadIntsFromFile[m[K(const std::string filePath, int n)
+ [01;35m[K^~~~~~~~~~~~~~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ make -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ now.o sorts.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main now.o sorts.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$  ./main insertionSort ../random.dat `seq 1000 1000 10000`
+n    time
+2
+9
+20
+35
+54
+77
+105
+137
+176
+217
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$  ./main insertionSort ../random.dat `seq 1000 1000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[30Pmake -f ../Makefile
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid outArray(int*, int, long int)[m[K’:
+[01m[Kmain.cc:83:27:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+   std::cout<<n<<"     "<<t
+                           [01;31m[K^[m[K
+                           [32m[K;[m[K
+[01m[Kmain.cc:87:3:[m[K
+   [32m[Kstd[m[K::cout << std::endl;
+   [32m[K~~~[m[K                      
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid go(SortP, std::__cxx11::string, bool, int)[m[K’:
+[01m[Kmain.cc:101:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kt2[m[K’ was not declared in this scope
+   if (isVerbose) outArray(a, n, t1-[01;31m[Kt2[m[K);
+                                    [01;31m[K^~[m[K
+[01m[Kmain.cc:101:36:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kt1[m[K’
+   if (isVerbose) outArray(a, n, t1-[01;36m[Kt2[m[K);
+                                    [01;36m[K^~[m[K
+                                    [32m[Kt1[m[K
+[01m[Kmain.cc:97:8:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kt0[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   long [01;35m[Kt0[m[K = now(); //
+        [01;35m[K^~[m[K
+[01m[Kmain.cc:[m[K At global scope:
+[01m[Kmain.cc:81:1:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid outArray(int*, int, long int)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+ [01;35m[KoutArray[m[K(int a[], int n, long t)
+ [01;35m[K^~~~~~~~[m[K
+make: *** [../Makefile:48: main.o] Error 1
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ make -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+[01m[Kmain.cc:[m[K In function ‘[01m[Kvoid outArray(int*, int, long int)[m[K’:
+[01m[Kmain.cc:83:27:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kstd[m[K’
+   std::cout<<n<<"     "<<t
+                           [01;31m[K^[m[K
+                           [32m[K;[m[K
+[01m[Kmain.cc:87:3:[m[K
+   [32m[Kstd[m[K::cout << std::endl;
+   [32m[K~~~[m[K                      
+make: *** [../Makefile:48: main.o] Error 1
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ make -f ../Makefile
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ now.o sorts.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main now.o sorts.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ make -f ../Makefile ./main insertionSort ../random.dat `seq 1000 1000 10000`
+n    time
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$  ./main insertionSort ../random.dat `seq 1000 1000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- insertionSort ../random.dat `seq 1000 1000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C insertionSort ../random.dat `seq 1000 1000[1P 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C insertionSort ../random.dat `seq 1000 1000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- insertionSort ../random.dat `seq 1000 10[C0 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv insertionSort ../random.dat `seq 1000 1[C[C0 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+n    time
+1000     2
+2000     8
+3000     19
+4000     34
+5000     54
+6000     78
+7000     106
+8000     138
+9000     174
+10000     215
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$  ./main quickSort ../random.dat `seq 10000 10000 100000`
+n    time
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$  ./main quickSort ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C quickSort ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- quickSort ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv quickSort ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C quickSort ../random.dat `seq 10000 100[C0 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+n    time
+10000     2
+20000     4
+30000     6
+40000     7
+50000     9
+60000     12
+70000     14
+80000     15
+90000     18
+100000     19
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$  ./main -v  quickSort ../random.dat `seq 10000 10000 100000`
+n    time
+10000     2
+20000     4
+30000     6
+40000     7
+50000     10
+60000     12
+70000     14
+80000     16
+90000     17
+100000     19
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$  ./main -v  quickSort ../random.dat `seq 10000 10000 100000`
+n    time
+10000     2
+20000     4
+30000     5
+40000     8
+50000     9
+60000     12
+70000     13
+80000     16
+90000     18
+100000     20
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$  ./main -v  quickSort ../random.dat `seq 10000 10000 100000`
+n    time
+10000     2
+20000     4
+30000     6
+40000     7
+50000     10
+60000     12
+70000     13
+80000     16
+90000     18
+100000     19
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$  ./main -v  quickSort ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CquickSort ../random.dat `seq 10000 10000 1[C[C[4P000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-v insertionSort ../random.dat `seq 1
+[C[C[C[C 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CinsertionSort ../random.dat `seq 1000 1000[3P 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[30Pmake -f ../Makefile
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+g++ -MT main.o -MMD -MP -MF .deps/main.d -g -Wall -std=c++17 -c main.cc
+g++ now.o sorts.o main.o -o main
+cat </dev/null >.gitignore
+echo .deps >.gitignore
+for t in main now.o sorts.o main.o; do echo $t >>.gitignore; done
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$ make -f ../Makefile ./main -v  quickSort ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[30Pmake -f ../Makefile
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ./main -v  quickSort ../random.dat `seq 10000 10000 100000`
+n       time
+10000     2
+20000     4
+30000     5
+40000     8
+50000     10
+60000     11
+70000     14
+80000     16
+90000     18
+100000     19
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$  ./main -v  quickSort ../random.dat `seq 10000 10000 100000`
+n       time
+10000     1
+20000     4
+30000     5
+40000     8
+50000     9
+60000     11
+70000     14
+80000     16
+90000     18
+100000     20
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$  ./main -v  quickSort ../random.dat `seq 10000 10000 100000`
+n       time
+10000     2
+20000     3
+30000     5
+40000     7
+50000     10
+60000     11
+70000     13
+80000     16
+90000     17
+100000     20
+eserdar1@remote03:~/i240b/submit/lab9/exercises/4-time$  ./main -v  quickSort ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[30Pmake -f ../Makefile
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ./main -v  quickSort ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CquickSort ../random.dat `seq 10000 10000 1[C[C[4P000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-v  quickSort ../random.dat `seq 10000 100[C[C 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CquickSort ../random.dat `seq 10000 10000 1[C[C[4P000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-v  quickSort ../random.dat `seq 10000 100[C[C 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CquickSort ../random.dat `seq 10000 10000 1[C[C[4P000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C-v  quickSort ../random.dat `seq 10000 100[C[C 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../random.dat `seq 10000 1000[C[1P 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../random.dat `seq 10000 10000[1P 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../random.dat `seq 10000 10000 [1P100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../random.dat `seq 10000 10000 1[1P00000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../random.dat `seq 10000 10000 10[C[C[C[C[1P`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../random.dat `seq 10000 10000 100[C[C[C[1P`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../random.dat `seq 10000 10000 1000[C[C[1P`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../random.dat `seq 10000 10000 10000[C[1P`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C ../random.dat `seq 10000 10000 100000[1P`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cn ../random.dat `seq 10000 10000 1000[C0`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cs ../random.dat `seq 10000 10000 100[C[C0`[A[C[C[C[C[C[CScript started on 2020-04-15 00:27:36-04:00 [TERM="xterm" TTY="/dev/pts/11" COLUMNS="105" LINES="41"]
+eserdar1@remote00:~/i240b/submit/lab9$ CD [K[K[Kcd exercises/
+eserdar1@remote00:~/i240b/submit/lab9/exercises$ ls
+2-sorts  3-stats  4-time  ascending.dat  descending.dat  Makefile  plot.gp  random.dat
+eserdar1@remote00:~/i240b/submit/lab9/exercises$ cd 4-time
+eserdar1@remote00:~/i240b/submit/lab9/exercises/4-time$ ls
+main  main.cc  main.o  now.cc  now.hh  now.o  sorts.cc	sorts.hh  sorts.o
+eserdar1@remote00:~/i240b/submit/lab9/exercises/4-time$ e[Kgedit [K[K[K[K[K[Kmake -f ../Makefile
+make: Nothing to be done for 'all'.
+eserdar1@remote00:~/i240b/submit/lab9/exercises/4-time$ ./main
+usage: ./main [-v] ALGORITHM INTS_DATA_FILE|- [N...]
+eserdar1@remote00:~/i240b/submit/lab9/exercises/4-time$ g[Kgedit main.cc&
+[1] 3113820
+eserdar1@remote00:~/i240b/submit/lab9/exercises/4-time$ $ ./main insertionSort ../random.dat `seq 1000 1000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C insertionSort ../random.dat `seq 1000 10[C0 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C= insertionSort ../random.dat `seq 1000 1[C[C0 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C insertionSort ../random.dat `seq 1000 10[C[C[1P 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- insertionSort ../random.dat `seq 1000 1[C[C0 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv insertionSort ../random.dat `seq 1000 [1@1[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C insertionSort ../random.dat `seq 1000[1@ [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+bash: $: command not found
+eserdar1@remote00:~/i240b/submit/lab9/exercises/4-time$ $ ./main -v  insertionSort ../random.dat `seq 1000 1000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CinsertionSort ../random.dat `seq 1000 [1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C insertionSort ../random.dat `seq 1000 1[1P[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C insertionSort ../random.dat `seq 1000 10[C[C[1P 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CinsertionSort ../random.dat `seq 1000 100[C[1P 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+bash: $: command not found
+eserdar1@remote00:~/i240b/submit/lab9/exercises/4-time$ bash
+eserdar1@remote00:~/i240b/submit/lab9/exercises/4-time$ gedit rotate.S&[2Pmain.c&ls[Kcd s20-a3-eserdar1/ls[Kcd s20-a3-eserdar1/ls[Kgit clone git@github.com:bucs220/s20-a3-eserdar1.git[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccd hw3[4Plsgit clone git@github.com:bucs220/s20-a3-eserdar1.git\[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K^C
+eserdar1@remote00:~/i240b/submit/lab9/exercises/4-time$  ./main insertionSort ../random.dat `seq 1000 1000 10000`
+n       time
+eserdar1@remote00:~/i240b/submit/lab9/exercises/4-time$  ./main insertionSort ../random.dat `seq 1000 1000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C insertionSort ../random.dat `seq 1000 1000 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- insertionSort ../random.dat `seq 1000 10[C0 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv insertionSort ../random.dat `seq 1000 1[C[C0 10000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+n       time
+1000     2
+2000     8
+3000     19
+4000     34
+5000     54
+6000     78
+7000     106
+8000     140
+9000     173
+10000     214
+eserdar1@remote00:~/i240b/submit/lab9/exercises/4-time$ ./main quickSort ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C quickSort ../random.dat `seq 10000 10000 1[C[C[C[C0`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C- quickSort ../random.dat `seq 10000 10000 100000`[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cv quickSort ../ra
